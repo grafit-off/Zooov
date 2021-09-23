@@ -1,0 +1,35 @@
+:root {
+	--color-white: #fff;
+	--color-black: #000;
+
+	--color-tamarillo: #8b1a12;
+	--color-apricot: #ec7973;
+	--color-shilo: #eab5b7;
+	--color-pink: #fdedee;
+	--color-bunker: #161920;
+	--color-tundora: #424242;
+	--color-pewter: #9d9f9e;
+	--color-black-haze: #eff0f0;
+}
+
+/* .light-theme {
+	--color-bg: #fff;
+}
+
+.dark-theme {
+	--color-bg: #191919;
+} */
+
+$fz-text: 18px;
+$fz-heading: 64px;
+
+$ff: "FuturaPT", sans-serif;
+
+$minWidth: 320;
+$maxWidth: 1440; // Разрешение макета
+$maxWidthContainer: 1200; // Разрешение контейнера
+
+$md1: $maxWidthContainer + 15; //desktop
+$md2: 991.98; // Tablet
+$md3: 767.98; // Mobile #1
+$md4: 479.98; // Mobile #2
