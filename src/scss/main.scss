@@ -16,6 +16,13 @@
 // -- //
 
 // Partials
+//* Components
+@import "partials/common/_main-heading.scss";
+@import "partials/common/_main-text.scss";
+@import "partials/common/_main-btn-link.scss";
+@import "partials/common/_burger.scss";
+//* -- //
+
 //* Sections
 //? Header
 @import "partials/header/_header.scss";
@@ -27,8 +34,4 @@
 @import "partials/footer/_footer.scss";
 //* -- //
 
-//* Components
-@import "partials/common/_main-heading.scss";
-@import "partials/common/_main-text.scss";
-//* -- //
 // -- //

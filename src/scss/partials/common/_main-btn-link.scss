@@ -1,0 +1,35 @@
+.main-btn-link {
+	display: inline-block;
+	padding: 12px 41px;
+	border-radius: 8px;
+	border: 1px solid var(--color-tamarillo);
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	transition: color 0.3s ease, background-color 0.3s ease;
+
+	&--red {
+		background-color: var(--color-tamarillo);
+		color: var(--color-white);
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: var(--color-white);
+				color: var(--color-tamarillo);
+				transition: color 0.3s ease, background-color 0.3s ease;
+			}
+		}
+	}
+
+	&--white {
+		background-color: var(--color-white);
+		color: var(--color-tamarillo);
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: var(--color-tamarillo);
+				color: var(--color-white);
+				transition: color 0.3s ease, background-color 0.3s ease;
+			}
+		}
+	}
+}

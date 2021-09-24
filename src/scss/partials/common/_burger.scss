@@ -1,0 +1,67 @@
+.burger {
+	position: relative;
+	width: 30px;
+	height: 18px;
+	z-index: 2;
+
+	&__line {
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		width: 100%;
+		height: 2px;
+
+		background-color: var(--color-white);
+		transform: translateY(-50%);
+
+		transition: transform 0.2s ease 0s;
+	}
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+
+		width: 100%;
+		height: 2px;
+
+		background-color: var(--color-white);
+
+		transition: background-color 0.2s ease, transform 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+	&--active span {
+		background-color: var(--color-black);
+		transform: translateY(-50%) scale(0);
+		transition: background-color 0.2s ease, transform 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+	}
+	&--active::before {
+		background-color: var(--color-black);
+
+		top: 8px;
+
+		transform: rotate(45deg);
+		transition: background-color 0.2s ease, transform 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+	}
+	&--active::after {
+		background-color: var(--color-black);
+
+		bottom: 8px;
+
+		transform: rotate(-45deg);
+		transition: background-color 0.2s ease, transform 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+	}
+	&--scroll {
+		.burger__line,
+		&::before,
+		&::after {
+			background-color: var(--color-black);
+		}
+	}
+}
