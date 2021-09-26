@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Includes
 	// @include('components/_variables.js');
 	// @include('resources/_scrollLockIOS.js');
+	// @include('components/_burger.js');
 	// @include('resources/_animateOnScroll.js');
 	// @include('resources/_modal.js');
-	// @include('components/_burger.js');
 	// -- //
 
 	header.addEventListener('click', (e) => {
@@ -19,3 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	})
 })
+

@@ -27,7 +27,6 @@ class Burger {
 		this.btn.setAttribute('aria-expanded', true);
 		this.list.classList.add('header__nav--active');
 		this.list.setAttribute('aria-hidden', false);
-
 	}
 
 	close() {
@@ -41,7 +40,6 @@ class Burger {
 		this.btn.setAttribute('aria-expanded', false);
 		this.list.classList.remove('header__nav--active');
 		this.list.setAttribute('aria-hidden', true);
-
 	}
 
 	toggle() {

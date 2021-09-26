@@ -2,6 +2,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 2;
+
 	width: 100%;
 	padding: 16px 0;
 	@media (max-width: $md2+px) {
@@ -72,7 +74,7 @@
 			padding-bottom: 130px;
 
 			overflow: auto;
-			background: var(--color-white) url(../img/menu-bg.jpg) center/cover no-repeat;
+			background: var(--color-white) url(../img/menu-bg.svg) center/cover no-repeat;
 		}
 	}
 
