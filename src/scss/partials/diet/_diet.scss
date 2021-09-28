@@ -1,0 +1,40 @@
+.diet {
+	&__container {
+	}
+
+	&__info {
+		display: flex;
+		margin-bottom: 74px;
+		@media (max-width: $md2+px) {
+			flex-direction: column;
+		}
+		@media (max-width: $md3+px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__heading {
+		flex: 1 0 auto;
+		margin-right: 60px;
+		@media (max-width: $md2+px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		flex: 0 1 auto;
+		&--strong {
+		}
+	}
+
+	&__swiper {
+		margin-bottom: 80px;
+		@media (max-width: $md3+px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__calculate {
+	}
+}

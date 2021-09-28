@@ -33,32 +33,65 @@ function fixHeader() {
 
 // Scroll To Target
 function scrollToTarget(id) {
-	if (isiPad || isiPhone || isiPod) {
-		let V = 0.4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
-		let w = window.pageYOffset;
-		let t = document.querySelector(id).getBoundingClientRect().top; // отступ от окна браузера до id
-		let start = null;
-		requestAnimationFrame(step);
-		function step(time) {
-			if (start === null) start = time;
-			let progress = time - start,
-				r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
-			window.scrollTo(0, r);
-			if (r != w + t) {
-				requestAnimationFrame(step)
-			} else {
-				location.hash = id;  // URL с хэшем
+	const target = document.querySelector(id);
+	if (isiPad || isiPhone || isiPod && target !== null) {
+		const bodyRect = document.body.getBoundingClientRect();
+		const elemRect = target.getBoundingClientRect();
+		const offset = elemRect.top - bodyRect.top;
+
+		const requestAnimFrame = (function () {
+			return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+				window.setTimeout(callback, 1000 / 60);
+			};
+		})();
+		Math.easeInOutQuad = function (t, b, c, d) {
+			t /= d / 2;
+			if (t < 1) {
+				return c / 2 * t * t + b
 			}
+			t--;
+			return -c / 2 * (t * (t - 2) - 1) + b;
+		};
+		function scrollToIos(to, callback, duration) {
+			function move(amount) {
+				document.documentElement.scrollTop = amount;
+				document.body.parentNode.scrollTop = amount;
+				document.body.scrollTop = amount;
+			}
+
+			function position() {
+				return document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop;
+			}
+			let start = position(),
+				change = to - start,
+				currentTime = 0,
+				increment = 20;
+			duration = (typeof (duration) === 'undefined') ? 500 : duration;
+
+			let animateScroll = function () {
+				currentTime += increment;
+				let val = Math.easeInOutQuad(currentTime, start, change, duration);
+				move(val);
+				if (currentTime < duration) {
+					requestAnimFrame(animateScroll);
+				} else {
+					if (callback && typeof (callback) === 'function') {
+						callback();
+					}
+				}
+			};
+			animateScroll();
 		}
+		scrollToIos(offset - 15, null, 200);
 		return;
 	}
 
-	let target = document.querySelector(id);
 	if (target !== null) {
-		let pos = target.offsetTop + 1;
+		let pos = target.offsetTop - (media.matches ? 20 : -1);
 		window.scrollTo({
 			top: pos,
 			behavior: 'smooth'
 		});
 	}
 }
+

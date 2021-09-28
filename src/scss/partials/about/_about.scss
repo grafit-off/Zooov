@@ -1,4 +1,8 @@
 .about {
+	padding-top: 180px;
+	@media (max-width: $md3+px) {
+		padding-top: 80px;
+	}
 	&__container {
 		display: flex;
 		align-items: center;

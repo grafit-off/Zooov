@@ -1,0 +1,29 @@
+.swiper-pagination {
+	display: none;
+
+	transform: translateX(-50%);
+	& .swiper-pagination-bullet {
+		display: block;
+
+		width: 8px;
+		height: 8px;
+
+		border: 1px solid var(--color-tamarillo);
+		border-radius: 50%;
+		background-color: transparent;
+
+		cursor: pointer;
+
+		transition: background-color 0.3s ease;
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+	& .swiper-pagination-bullet-active {
+		background-color: var(--color-tamarillo);
+		transition: background-color 0.3s ease;
+	}
+	@media (max-width: $md3+px) {
+		display: flex;
+	}
+}

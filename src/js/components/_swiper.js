@@ -1,8 +1,8 @@
 // Swiper
 class MobileSwiper {
 	constructor(selector, swiperObj, breakpoint) {
-		this.selector = selector;
-		this.selectorClassName = this.selector.className.trim();
+		this.selector = document.querySelector(`.${selector}`);
+		this.selectorClassName = selector;
 		this.breakpoint = breakpoint;
 		this.swiperObj = swiperObj;
 		this.initSlider = null;
@@ -22,6 +22,7 @@ class MobileSwiper {
 		}
 	}
 	init() {
+		this.selector.dataset.mobile = 'false';
 		this.create();
 		this.destroy();
 	}

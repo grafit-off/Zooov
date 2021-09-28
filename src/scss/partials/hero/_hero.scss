@@ -82,35 +82,3 @@
 		font-weight: 500;
 	}
 }
-
-.ellipse {
-	position: relative;
-	display: inline-block;
-	font-weight: 700;
-
-	&__svg {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: -1;
-
-		width: 267px;
-		height: 100px;
-
-		opacity: 0;
-		transform: translate(-50%, -50%);
-		&--animated {
-			opacity: 1;
-			animation: show 1s ease-in-out 0s forwards;
-		}
-	}
-}
-
-@keyframes show {
-	from {
-		stroke-dasharray: 0 1000;
-	}
-	to {
-		stroke-dasharray: 1000 0;
-	}
-}

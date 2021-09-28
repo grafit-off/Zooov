@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	})
 
 	classificationSwiper.init();
+	dietSwiper.init();
 
 	window.addEventListener('resize', () => {
 		resizeDebounce.init();

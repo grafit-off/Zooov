@@ -13,8 +13,7 @@ const burgerBtn = header.querySelector('.burger');
 const burgerList = header.querySelector('.header__nav');
 const burger = new Burger(burgerBtn, burgerList);
 
-const swiperSelector = document.querySelector('.classification-swiper');
-const swiperObj = {
+const classificationSwiperObj = {
 	containerModifierClass: "classification-swiper",
 	wrapperClass: "classification-swiper__wrapper",
 	slideClass: "classification-swiper__slide",
@@ -24,18 +23,42 @@ const swiperObj = {
 		el: ".classification-swiper__pagination",
 		clickable: true
 	},
+	a11y: {
+		paginationBulletMessage: 'Перейти к слайду номер {{index}}'
+	},
 	watchSlidesVisibility: true
 };
-const classificationSwiper = new MobileSwiper(swiperSelector, swiperObj, 767);
+const classificationSwiper = new MobileSwiper('classification-swiper', classificationSwiperObj, 767);
+
+const dietSwiperObj = {
+	containerModifierClass: "diet-swiper",
+	wrapperClass: "diet-swiper__wrapper",
+	slideClass: "diet-swiper__slide",
+	slidesPerView: 1.25,
+	spaceBetween: 25,
+	grabCursor: true,
+	pagination: {
+		el: ".diet-swiper__pagination",
+		clickable: true
+	},
+	a11y: {
+		paginationBulletMessage: 'Перейти к слайду номер {{index}}'
+	},
+	watchSlidesVisibility: true
+};
+const dietSwiper = new MobileSwiper('diet-swiper', dietSwiperObj, 767);
 
 const resizeFunc = () => {
 	classificationSwiper.init();
+	dietSwiper.init();
 	console.log('ResizeDebounce');
 }
-const resizeDebounce = new Debounce(100, resizeFunc);
+const resizeDebounce = new Debounce(300, resizeFunc);
 
 const scrollFunc = () => {
 	fixHeader();
 	console.log('ScrollDebounce');
 }
 const scrollDebounce = new Debounce(100, scrollFunc);
+
+

@@ -21,6 +21,8 @@
 @import "partials/common/_main-text.scss";
 @import "partials/common/_main-btn-link.scss";
 @import "partials/common/_section.scss";
+@import "partials/common/_ellipse.scss";
+@import "partials/common/_swiper-pagination.scss";
 //* -- //
 
 //* Sections
@@ -35,6 +37,12 @@
 @import "partials/about/_about.scss";
 @import "partials/about/components/_classification-swiper.scss";
 @import "partials/about/components/_classification-slide.scss";
+
+//? About
+@import "partials/diet/_diet.scss";
+@import "partials/diet/components/_diet-swiper.scss";
+@import "partials/diet/components/_diet-slide.scss";
+@import "partials/diet/components/_diet-calculate.scss";
 
 //? Footer
 @import "partials/footer/_footer.scss";

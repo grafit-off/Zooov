@@ -1,0 +1,64 @@
+.diet-swiper {
+	position: relative;
+	z-index: 1;
+
+	overflow: hidden;
+
+	width: 100%;
+	&__pagination {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		z-index: 2;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		width: 100%;
+		height: 100%;
+		@media (max-width: $md3+px) {
+			flex-wrap: nowrap;
+			padding-bottom: 60px;
+		}
+	}
+	&__slide {
+		flex: 0 0 calc(25% - 18.75px);
+
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+		@media (max-width: $md2+px) {
+			flex: 0 0 calc(50% - 12.5px);
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+			&:not(:nth-last-child(-n + 2)) {
+				margin-bottom: 25px;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 25px;
+			}
+		}
+		@media (max-width: $md3+px) {
+			flex: none;
+			&:not(:nth-last-child(-n + 2)) {
+				margin-bottom: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+			opacity: 0.5;
+			transition: opacity 0.3s ease;
+
+			&.swiper-slide-active {
+				transition: opacity 0.3s ease;
+				opacity: 1;
+			}
+		}
+	}
+}

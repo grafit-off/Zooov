@@ -12,7 +12,7 @@ let bodyWasNotLock;
 
 // Проверки
 if (typeof (disableScroll) !== 'function' && typeof (enableScroll) !== 'function') {
-	console.log(`Тип данных переменных "disableScroll" и "enableScroll": "${typeof (disableScroll)} и ${typeof (enableScroll)}"! Для IOS НЕ будет выполнятся скрипт scrollLockIOS`);
+	console.error(`Тип данных переменных "disableScroll" и "enableScroll": "${typeof (disableScroll)} и ${typeof (enableScroll)}"! Для IOS НЕ будет выполнятся скрипт scrollLockIOS`);
 }
 // -- //
 if (modalButtons.length > 0) {
@@ -30,7 +30,7 @@ if (modalButtons.length > 0) {
 				}, 100)
 				e.preventDefault();
 			} else {
-				console.log(`Модальное окно не существует! ${curentModal}`);
+				console.error(`Модальное окно не существует!\n modalName: ${modalName}, currentModal: ${curentModal}`);
 			}
 		});
 	}
