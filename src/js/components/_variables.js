@@ -12,6 +12,7 @@ const headerLinks = header.querySelectorAll('.header__link');
 const burgerBtn = header.querySelector('.burger');
 const burgerList = header.querySelector('.header__nav');
 const burger = new Burger(burgerBtn, burgerList);
+const heroLink = document.querySelector('.hero__link');
 
 const classificationSwiperObj = {
 	containerModifierClass: "classification-swiper",

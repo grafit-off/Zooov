@@ -43,7 +43,7 @@
 		}
 		&:focus:not(:focus-visible) {
 			box-shadow: none;
-			border-radius: 0;
+			border-radius: 8px;
 		}
 	}
 	@extend %reset;
@@ -68,7 +68,7 @@
 		}
 		&:focus:not(:focus-visible) {
 			box-shadow: none;
-			border-radius: 0;
+			border-radius: 8px;
 		}
 	}
 

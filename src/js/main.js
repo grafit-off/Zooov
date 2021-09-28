@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
 				break;
 		}
 	})
+	heroLink.addEventListener('click', () => {
+		scrollToTarget(heroLink.hash);
+	})
 
 	classificationSwiper.init();
 	dietSwiper.init();
