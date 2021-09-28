@@ -18,15 +18,17 @@ class Burger {
 
 	open() {
 		this.disableBtn();
-		if (this.isIphone) {
-			disableScroll();
-		} else {
-			body.classList.add('lock')
-		}
 		this.btn.classList.add('burger--active');
 		this.btn.setAttribute('aria-expanded', true);
 		this.list.classList.add('header__nav--active');
 		this.list.setAttribute('aria-hidden', false);
+		if (this.isIphone) {
+			setTimeout(() => {
+				disableScroll();
+			}, 300);
+		} else {
+			body.classList.add('lock')
+		}
 	}
 
 	close() {

@@ -1,5 +1,5 @@
 .header {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 2;
@@ -10,6 +10,7 @@
 		padding: 10px 0;
 	}
 	&--active {
+		position: fixed;
 		padding: 9px 0;
 		background-color: var(--color-white);
 		.header__image {

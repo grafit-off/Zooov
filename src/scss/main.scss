@@ -20,15 +20,21 @@
 @import "partials/common/_main-heading.scss";
 @import "partials/common/_main-text.scss";
 @import "partials/common/_main-btn-link.scss";
-@import "partials/common/_burger.scss";
+@import "partials/common/_section.scss";
 //* -- //
 
 //* Sections
 //? Header
 @import "partials/header/_header.scss";
+@import "partials/header/components/_burger.scss";
 
 //? Hero
 @import "partials/hero/_hero.scss";
+
+//? About
+@import "partials/about/_about.scss";
+@import "partials/about/components/_classification-swiper.scss";
+@import "partials/about/components/_classification-slide.scss";
 
 //? Footer
 @import "partials/footer/_footer.scss";

@@ -18,15 +18,3 @@ let enableScroll = () => {
 	document.querySelector('html').removeAttribute('style');
 	document.body.removeAttribute('data-position');
 }
-
-// Слушатель на один элемент
-let scrollLock_BtnListener = (item) => {
-	item.addEventListener('click', (e) => {
-		item.classList.toggle('scroll')
-		if (item.classList.contains('scroll')) {
-			disableScroll();
-		} else {
-			enableScroll();
-		}
-	});
-}

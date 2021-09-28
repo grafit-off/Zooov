@@ -1,8 +1,10 @@
 .main-heading {
 	color: var(--color-black);
 
+	font-family: $ff2;
 	font-size: $fz-heading;
 	font-weight: 700;
+	letter-spacing: 0.02em;
 	line-height: 130%;
 
 	@media (max-width: $md3+px) {
