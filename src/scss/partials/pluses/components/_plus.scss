@@ -1,0 +1,49 @@
+.plus {
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin-bottom: 16px;
+	}
+	&--paper::before {
+		background: url(../img/paper.svg) center/contain no-repeat;
+	}
+
+	&--heart::before {
+		background: url(../img/heart.svg) center/contain no-repeat;
+	}
+
+	&--rocket::before {
+		background: url(../img/rocket.svg) center/contain no-repeat;
+	}
+	&--smile {
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 32px;
+			height: 28px;
+
+			background: url(../img/dashes.svg) center/contain no-repeat;
+
+			transform: translate(-50%, -70%);
+		}
+		&::before {
+			background: url(../img/smile.svg) center/contain no-repeat;
+		}
+	}
+	&__heading {
+		margin-bottom: 8px;
+		color: var(--color-black);
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	&__text {
+	}
+}

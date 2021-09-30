@@ -38,11 +38,18 @@
 @import "partials/about/components/_classification-swiper.scss";
 @import "partials/about/components/_classification-slide.scss";
 
-//? About
+//? Diet
 @import "partials/diet/_diet.scss";
 @import "partials/diet/components/_diet-swiper.scss";
 @import "partials/diet/components/_diet-slide.scss";
 @import "partials/diet/components/_diet-calculate.scss";
+
+//? Pluses
+@import "partials/pluses/_pluses.scss";
+@import "partials/pluses/components/_plus.scss";
+
+//? Zooov
+@import "partials/zooov/_zooov.scss";
 
 //? Footer
 @import "partials/footer/_footer.scss";

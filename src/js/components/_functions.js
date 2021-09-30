@@ -82,7 +82,7 @@ function scrollToTarget(id) {
 			};
 			animateScroll();
 		}
-		scrollToIos(offset - 15, null, 200);
+		scrollToIos(offset - 15, null, 500);
 		return;
 	}
 

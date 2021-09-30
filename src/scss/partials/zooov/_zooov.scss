@@ -1,0 +1,158 @@
+.zooov {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: var(--color-chablis);
+	overflow: hidden;
+	&__container {
+		display: flex;
+		align-items: center;
+		@media (max-width: $md2+px) {
+			flex-direction: column-reverse;
+			justify-content: center;
+		}
+	}
+
+	&__images {
+		position: relative;
+		flex: 1 0 auto;
+		align-self: flex-start;
+		max-width: 556px;
+		margin-right: 56px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+			background: url(../img/zooov-mask.svg) center/contain no-repeat;
+			transform: scale(1.3);
+			@media (max-width: $md2+px) {
+				background: url(../img/zooov-mask--mobile.svg) center/contain no-repeat;
+				transform: scale(1.4);
+			}
+			@media (max-width: 500px) {
+				transform: translate(0%, 20%) scale(1.9);
+			}
+		}
+		@media (max-width: $md1+px) {
+			flex: 0 0 30%;
+			align-self: center;
+		}
+		@media (max-width: $md2+px) {
+			margin-right: 0;
+		}
+	}
+
+	&__image {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		@media (max-width: $md2+px) {
+			max-height: 500px;
+		}
+		&--desk {
+			display: block;
+			@media (max-width: $md3+px) {
+				display: none;
+			}
+		}
+
+		&--mobile {
+			display: none;
+			@media (max-width: $md3+px) {
+				display: block;
+			}
+		}
+		&--dog {
+			position: absolute;
+			top: 68%;
+			left: -10%;
+			width: 120px;
+			height: 120px;
+			@media (max-width: $md1+px) {
+				width: 90px;
+				height: 90px;
+			}
+			@media (max-width: $md2+px) {
+				left: 0%;
+				width: 70px;
+				height: 70px;
+			}
+		}
+		&--heart {
+			position: absolute;
+			top: 38%;
+			right: 3%;
+			width: 120px;
+			height: 120px;
+			@media (max-width: $md1+px) {
+				width: 90px;
+				height: 90px;
+			}
+			@media (max-width: $md2+px) {
+				right: 10%;
+				width: 70px;
+				height: 70px;
+			}
+		}
+	}
+
+	&__info {
+		position: relative;
+		z-index: 1;
+		flex: 0 1 auto;
+		@media (max-width: $md2+px) {
+			margin-bottom: 76px;
+		}
+	}
+
+	&__heading {
+		max-width: 420px;
+		margin-bottom: 40px;
+		@media (max-width: $md3+px) {
+			max-width: none;
+			margin-bottom: 24px;
+		}
+	}
+
+	&__dashes {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			width: 26px;
+			height: 32px;
+
+			background: url(../img/dashes.svg) center/contain no-repeat;
+			transform: translate(80%, 50%) rotate(180deg);
+			@media (max-width: $md3+px) {
+				display: none;
+			}
+		}
+		&--mobile {
+			&::after {
+				top: 0;
+				bottom: auto;
+				display: none;
+				transform: translate(70%, -20%) rotate(60deg);
+				@media (max-width: $md3+px) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+}
