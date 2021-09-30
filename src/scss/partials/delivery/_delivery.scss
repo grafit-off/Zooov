@@ -1,0 +1,69 @@
+.delivery {
+	padding-top: 180px;
+	@media (max-width: $md3+px) {
+		padding-top: 80px;
+	}
+	&__container {
+	}
+
+	&__heading {
+		margin-bottom: 80px;
+		@media (max-width: $md3+px) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__list {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		@include maxwidth(600) {
+			flex-direction: column;
+			padding-left: 30px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 100%;
+				background: url(../img/arrow--mobile.svg) left top/contain no-repeat;
+			}
+		}
+	}
+
+	&__item {
+		flex: 0 0 calc(25% - 30px);
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+
+		@media (max-width: $md2+px) {
+			flex: 0 0 calc(50% - 20px);
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 40px;
+			}
+			&:not(:nth-last-child(-n + 2)) {
+				margin-bottom: 40px;
+			}
+		}
+
+		@include maxwidth(600) {
+			flex: none;
+
+			&:not(:nth-child(2n)) {
+				margin-right: 0;
+			}
+			&:not(:nth-last-child(-n + 2)) {
+				margin-bottom: 0;
+			}
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}

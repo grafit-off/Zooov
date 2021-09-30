@@ -1,0 +1,31 @@
+.faq {
+	padding-bottom: 180px;
+	@media (max-width: $md3+px) {
+		padding-bottom: 80px;
+	}
+	&__container {
+		display: flex;
+		@media (max-width: $md2+px) {
+			flex-direction: column;
+		}
+	}
+
+	&__heading {
+		flex: 1 0 auto;
+		margin-right: 76px;
+		@media (max-width: $md1+px) {
+			margin-right: 40px;
+		}
+		@media (max-width: $md2+px) {
+			flex: none;
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	&__accordion {
+		flex: 0 1 auto;
+		@media (max-width: $md2+px) {
+			flex: none;
+		}
+	}
+}

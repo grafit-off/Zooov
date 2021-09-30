@@ -51,6 +51,14 @@
 //? Zooov
 @import "partials/zooov/_zooov.scss";
 
+//? Delivery
+@import "partials/delivery/_delivery.scss";
+@import "partials/delivery/components/_delivery-item.scss";
+
+//? FAQ
+@import "partials/faq/_faq.scss";
+@import "partials/faq/components/_accordion.scss";
+
 //? Footer
 @import "partials/footer/_footer.scss";
 //* -- //

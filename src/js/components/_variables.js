@@ -62,4 +62,8 @@ const scrollFunc = () => {
 }
 const scrollDebounce = new Debounce(100, scrollFunc);
 
+const accordions = document.querySelectorAll('.accordion__item');
 
+accordions.forEach(el => new Accordion({
+	selector: el
+}));

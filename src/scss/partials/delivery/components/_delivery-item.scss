@@ -1,0 +1,86 @@
+.delivery-item {
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 30px;
+		margin-bottom: 22px;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 5px;
+		right: 0;
+		width: 139px;
+		height: 20px;
+		background: url(../img/arrow.svg) center/contain no-repeat;
+		@include maxwidth(600) {
+			display: none;
+		}
+	}
+	&--package {
+		&::before {
+			background: url(../img/package.svg) center/contain no-repeat;
+		}
+	}
+
+	&--phone {
+		&::before {
+			background: url(../img/PhoneCall.svg) center/contain no-repeat;
+		}
+	}
+
+	&--clock {
+		&::before {
+			background: url(../img/clock.svg) center/contain no-repeat;
+		}
+	}
+
+	&--heart {
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: block;
+			width: 32px;
+			height: 32px;
+			transform: translate(-70%, -80%);
+			background: url(../img/dashes.svg) center/contain no-repeat;
+			@media (max-width: $md3+px) {
+				transform: translate(60%, -90%) rotate(60deg);
+			}
+		}
+		&::before {
+			background: url(../img/heart--delivery.svg) center/contain no-repeat;
+		}
+	}
+
+	&__heading {
+		margin-bottom: 8px;
+		color: var(--color-black);
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	&__text {
+	}
+
+	&__btn {
+		position: relative;
+		color: var(--color-tamarillo);
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: currentColor;
+		}
+	}
+}
