@@ -58,11 +58,7 @@ class Accordion {
 
 	toggle() {
 		if (!this.animated) {
-			if ('animate' in this.body) {
-				this.body.classList.contains('accordion__body--show') ? this.close() : this.open();
-			} else {
-				this.body.classList.toggle('accordion__body--show');
-			}
+			this.body.classList.contains('accordion__body--show') ? this.close() : this.open();
 		}
 	}
 }

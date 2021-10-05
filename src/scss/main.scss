@@ -23,6 +23,8 @@
 @import "partials/common/_section.scss";
 @import "partials/common/_ellipse.scss";
 @import "partials/common/_swiper-pagination.scss";
+@import "partials/common/_checkbox.scss";
+@import "partials/common/_input.scss";
 //* -- //
 
 //* Sections
@@ -58,6 +60,11 @@
 //? FAQ
 @import "partials/faq/_faq.scss";
 @import "partials/faq/components/_accordion.scss";
+
+//? Contact
+@import "partials/contact/_contact.scss";
+@import "partials/contact/components/_contact-info.scss";
+@import "partials/contact/components/_contact-form.scss";
 
 //? Footer
 @import "partials/footer/_footer.scss";
