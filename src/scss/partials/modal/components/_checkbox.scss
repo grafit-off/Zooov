@@ -1,0 +1,93 @@
+/* Check */
+.order-check {
+	display: flex;
+	align-items: center;
+	&__text {
+		margin-right: 10px;
+		color: var(--color-pewter);
+
+		font-size: 12px;
+		line-height: 140%;
+
+		user-select: none;
+		cursor: pointer;
+		@media (max-width: $md3+px) {
+			font-size: 11px;
+		}
+	}
+	&__box {
+		position: relative;
+		display: inline-block;
+		align-self: flex-start;
+		flex: 0 0 16px;
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+		overflow: hidden;
+
+		border: 1px solid var(--color-tamarillo);
+		border-radius: 2px;
+		background-color: transparent;
+		transition: background-color 0.15s ease;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 10px;
+			height: 8px;
+			background: url(../img/contact-ok.svg) center/contain no-repeat;
+			opacity: 0;
+			transform: translate(-50%, -50%);
+			transition: opacity 0.15s ease;
+		}
+	}
+
+	/* Checked */
+	&__input:checked + &__box {
+		background-color: var(--color-white);
+		transition: background-color 0.3s ease;
+		&::after {
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+	}
+	// -- //
+
+	/* Focused */
+
+	&__input:focus + &__box {
+		outline: 0;
+		box-shadow: 0 0 0 3px #8edc44;
+		border-radius: 2px;
+	}
+
+	&__input:focus-visible + &__box {
+		outline: 0;
+		box-shadow: 0 0 0 3px #8edc44;
+		border-radius: 2px;
+	}
+
+	&__input:focus:not(:focus-visible) + &__box {
+		outline: 0;
+		box-shadow: none;
+		border-radius: 2px;
+	}
+	// -- //
+
+	/* Disabled */
+	&__input:disabled + &__box {
+		border: 3px solid #9b9b9b;
+	}
+	&__input:disabled + &__text {
+		cursor: auto;
+	}
+	// -- //
+
+	/*Checked disabled */
+	&__input:checked:disabled + &__box {
+		background-color: #9b9b9b;
+	}
+	// -- //
+}
+// -- //

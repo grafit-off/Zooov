@@ -13,6 +13,29 @@ const burgerBtn = header.querySelector('.burger');
 const burgerList = header.querySelector('.header__nav');
 const burger = new Burger(burgerBtn, burgerList);
 const heroLink = document.querySelector('.hero__link');
+const descrModal = document.querySelector('.descr-modal');
+const orderModal = document.querySelector('.order-modal');
+const calcModal = document.querySelector('#modal-calc');
+const responseModal = document.querySelector('.response-modal');
+const imageMain = descrModal.querySelector('.image-preview__main-img');
+const dietSec = document.querySelector('.diet');
+const fields = document.querySelectorAll('.field__input');
+const stepper = new Stepper('.stepper');
+const selectItem = document.querySelector('.select__item');
+const priceEl = document.querySelector('.order-form__price');
+const contactForm = document.querySelector('.contact-form');
+const orderForm = document.querySelector('.order-form');
+const calcForm = document.querySelector('.calc-form');
+const snackbar = document.querySelector(".snackbar");
+
+
+let invalid;
+const VALIDATION_PATTERNS = {
+	notNumber: /\D/,
+	notEmpty: /^(?!\s*$).+/,
+	phone: /^\d{7,14}$/,
+	email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+}
 
 const classificationSwiperObj = {
 	containerModifierClass: "classification-swiper",
@@ -40,7 +63,8 @@ const dietSwiperObj = {
 	grabCursor: true,
 	pagination: {
 		el: ".diet-swiper__pagination",
-		clickable: true
+		clickable: true,
+		bulletElement: 'button'
 	},
 	a11y: {
 		paginationBulletMessage: 'Перейти к слайду номер {{index}}'
@@ -52,13 +76,13 @@ const dietSwiper = new MobileSwiper('diet-swiper', dietSwiperObj, 767);
 const resizeFunc = () => {
 	classificationSwiper.init();
 	dietSwiper.init();
-	console.log('ResizeDebounce');
 }
+
 const resizeDebounce = new Debounce(300, resizeFunc);
 
 const scrollFunc = () => {
 	fixHeader();
-	console.log('ScrollDebounce');
+	showActiveLink();
 }
 const scrollDebounce = new Debounce(100, scrollFunc);
 

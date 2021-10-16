@@ -1,0 +1,73 @@
+.stepper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 14px 16px;
+
+	background-color: var(--color-black-haze);
+	border-radius: 8px;
+
+	user-select: none;
+
+	&__field {
+		flex: 1 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		overflow: hidden;
+	}
+	&__input {
+		width: 10px;
+		height: 100%;
+		min-width: 2ex;
+
+		background-color: transparent;
+		color: var(--color-pewter);
+
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	&__btn {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+
+		background-color: transparent;
+		color: var(--color-pewter);
+
+		cursor: pointer;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 14px;
+			height: 1px;
+			background-color: var(--color-pewter);
+			transform: translate(-50%, -50%);
+		}
+		&--plus {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 1px;
+				height: 14px;
+				background-color: var(--color-pewter);
+				transform: translate(-50%, -50%);
+			}
+		}
+		&--minus {
+		}
+		&--disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
+}

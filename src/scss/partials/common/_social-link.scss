@@ -1,0 +1,39 @@
+.social-link {
+	position: relative;
+	padding: 10px 16px 10px 44px;
+	background-color: var(--color-apple);
+	border-radius: 8px;
+	color: var(--color-white);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	transition: background-color 0.3s ease;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		width: 24px;
+		height: 24px;
+		transform: translate(0, -50%);
+	}
+	&--wa {
+		&::before {
+			background: url(../img/contact-wa.png) center/24px no-repeat;
+		}
+	}
+
+	&--tg {
+		&::before {
+			background: url(../img/contact-tg.svg) center/24px no-repeat;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--color-apricot);
+			transition: background-color 0.3s ease;
+		}
+	}
+}

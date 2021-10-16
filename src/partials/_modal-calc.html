@@ -1,0 +1,75 @@
+<div class='modal' id='modal-calc' aria-labelledby="modal-calc-title" aria-describedby='modal-calc-desc' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+			<div class='modal__body calc-modal'>
+				<div class="calc-modal__info">
+					<h3 class='calc-modal__title text-reset' id='modal-calc-title'>
+						Рассчет рациона
+					</h3>
+					<div class="calc-modal__social">
+						<a href="https://api.whatsapp.com/send?phone=78051196325" target="_blank" rel="noopener" class="calc-modal__link social-link social-link--wa  link-reset">
+							WhatsApp
+						</a>
+						<a href="https://telegram.me/ncl_ch" target="_blank" rel="noopener" class="calc-modal__link social-link social-link--tg link-reset">
+							Telegram
+						</a>
+					</div>
+					<p class='calc-modal__desc text-reset' id='modal-calc-desc'>
+						Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона
+						для вашего хвостика. Или напишите нам в мессендерах.
+					</p>
+				</div>
+				<form class="calc-modal__form calc-form">
+					<fieldset class="calc-form__fieldset">
+						<legend class="calc-form__legend visually-hidden">
+							Контактная информация и информация о питомце
+						</legend>
+						<div class="calc-form__item">
+							<div class="calc-form__radio-box">
+								<label class="calc-form__radio radio">
+									<input class="radio__input visually-hidden" type="radio" name="radio" value="dog" required>
+									<span class="radio__box"></span>
+									<span class="radio__text">Взрослая собака</span>
+								</label>
+								<label class="calc-form__radio radio">
+									<input class="radio__input visually-hidden" type="radio" name="radio" value="puppy">
+									<span class="radio__box"></span>
+									<span class="radio__text">Щенок</span>
+								</label>
+							</div>
+							<div class="calc-form__prop calc-form__prop--weight field">
+								<input name="weight" type="number" data-validation="notEmpty" id="input-weight" class="calc-form__input calc-form__input--number field__input form-input input-reset" required>
+								<label for="input-weight" class="calc-form__label field__label"> Вес (кг) </label>
+							</div>
+							<div class="calc-form__prop  field">
+								<input name="age" type="text" data-validation="notEmpty" id="input-age" class="calc-form__input  field__input form-input input-reset" required>
+								<label for="input-age" class="calc-form__label field__label"> Возраст </label>
+							</div>
+							<div class="calc-form__name  field">
+								<input name="name" type="text" autocomplete="name" data-validation="notNumber" id="input-calc-name" class="calc-form__input field__input form-input input-reset" required>
+								<label for="input-calc-name" class="calc-form__label field__label"> Ваше имя </label>
+							</div>
+						</div>
+						<div class="calc-form__item calc-form__item--sec">
+							<div class="calc-form__tel  field">
+								<input name="tel" autocomplete="tel" type="tel" data-validation="phone" id="input-calc-tel" class="calc-form__input field__input form-input input-reset" required>
+								<label for="input-calc-tel" class="calc-form__label field__label"> Телефон </label>
+							</div>
+							<textarea name="message" autocomplete="off" class="calc-form__textarea form-input input-reset" placeholder="Если у вашего хвостика есть особенности здоровья – напишите об этом..."></textarea>
+						</div>
+					</fieldset>
+					<label class="calc-form__check order-check ">
+						<input name="accept" class="order-check__input visually-hidden" type="checkbox" required>
+						<span class="order-check__box "></span>
+						<span class="order-check__text ">Даю согласие на обработку
+							персональных данных</span>
+					</label>
+					<button class="calc-form__submit btn-reset main-btn-link main-btn-link--red" type="submit">Расчитать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

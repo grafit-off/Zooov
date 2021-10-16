@@ -1,10 +1,23 @@
 /* // Example
+// class="animate-item" data-animation='from-left'  data-delay="0.5" data-animation-once
+
 [data-animation="from-left"] {
-	transform: translate(-100%, 0);
-	transition: transform 0.3s ease;
+	transform: translateX(-100vw);
+	transition: transform 0.3s ease-in-out;
 }
 [data-animation="from-left"].animated {
-	transform: translate(0, 0);
-	transition: transform 0.3s ease;
+	transform: translateX(0);
+	transition: transform 0.3s ease-in-out;
 }
-*/
+
+[data-animation="from-bottom"] {
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+[data-animation="from-bottom"].animated {
+	opacity: 1;
+	transform: translateY(0);
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+ */

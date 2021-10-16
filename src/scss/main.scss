@@ -23,8 +23,12 @@
 @import "partials/common/_section.scss";
 @import "partials/common/_ellipse.scss";
 @import "partials/common/_swiper-pagination.scss";
-@import "partials/common/_checkbox.scss";
 @import "partials/common/_input.scss";
+@import "partials/common/_input-invalid.scss";
+@import "partials/common/_snackbar.scss";
+@import "partials/common/_social-link.scss";
+@import "partials/common/_form-input.scss";
+@import "partials/common/_radio.scss";
 //* -- //
 
 //* Sections
@@ -43,7 +47,7 @@
 //? Diet
 @import "partials/diet/_diet.scss";
 @import "partials/diet/components/_diet-swiper.scss";
-@import "partials/diet/components/_diet-slide.scss";
+@import "partials/diet/components/_product.scss";
 @import "partials/diet/components/_diet-calculate.scss";
 
 //? Pluses
@@ -65,9 +69,26 @@
 @import "partials/contact/_contact.scss";
 @import "partials/contact/components/_contact-info.scss";
 @import "partials/contact/components/_contact-form.scss";
+@import "partials/contact/components/_field.scss";
+@import "partials/contact/components/_contact-check.scss";
 
 //? Footer
 @import "partials/footer/_footer.scss";
 //* -- //
+
+//? Modals
+@import "partials/modal/_modal.scss";
+@import "partials/modal/_descr-modal.scss";
+@import "partials/modal/components/_image-preview.scss";
+
+@import "partials/modal/_order-modal.scss";
+@import "partials/modal/components/_order-form.scss";
+@import "partials/modal/components/_stepper.scss";
+@import "partials/modal/components/_select.scss";
+@import "partials/modal/components/_checkbox.scss";
+
+@import "partials/modal/_response-modal.scss";
+@import "partials/modal/_calc-modal.scss";
+@import "partials/modal/_calc-form.scss";
 
 // -- //

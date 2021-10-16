@@ -1,0 +1,46 @@
+// Snackbar
+.snackbar {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	z-index: 10;
+
+	width: auto;
+	min-width: 200px;
+	padding: 15px;
+	visibility: hidden;
+
+	border-radius: 2px;
+	color: #fff;
+	text-align: center;
+	transform: translateX(-50%);
+	&--show {
+		visibility: visible;
+		background-color: #333;
+		/* Если 3000 в js, то в стилях 2.6s */
+		animation: fadein 0.5s, fadeout 0.5s 2.6s;
+	}
+}
+
+@keyframes fadein {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+// -- //

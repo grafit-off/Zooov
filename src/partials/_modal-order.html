@@ -1,0 +1,71 @@
+<div class='modal' id='modal-order' aria-labelledby="modal-order-title" aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content order-modal'>
+			<button aria-label='Закрыть модальное окно' class='order-modal__close modal__close close-modal btn-reset'>
+			</button>
+			<div class="order-modal__image">
+				<img src="img/image-preview1.jpg" alt="" class="order-modal__img">
+			</div>
+			<form action="/" class="order-modal__form order-form">
+				<h3 class="order-form__title text-reset" id="modal-order-title">
+					Для взрослых собак
+				</h3>
+				<div class="order-form__type">
+					Баранина/Кролик
+				</div>
+				<fieldset class="order-form__fieldset">
+					<legend class="order-form__legend visually-hidden text-reset">
+						Контактная информация
+					</legend>
+					<div class="order-form__item field">
+						<input name="name" autocomplete="name" data-validation="notNumber" type="text" class="order-form__input form-input input-reset field__input" id="order-name" required>
+						<label for="order-name" class="order-form__label field__label">
+							Имя
+						</label>
+					</div>
+					<div class="order-form__item field">
+						<input name="tel" autocomplete="tel" data-validation="phone" type="text" class="order-form__input form-input input-reset field__input" id="order-tel" required>
+						<label for="order-name" class="order-form__label field__label">
+							Телефон
+						</label>
+					</div>
+					<div class="order-form__item field">
+						<input name="adress" autocomplete="on" data-validation="notNumber" type="text" class="order-form__input form-input input-reset field__input" id="order-adress" required>
+						<label for="order-name" class="order-form__label field__label">
+							Адрес
+						</label>
+					</div>
+					<div class="order-form__select select">
+						<label class="select__label">
+							<select name="volume" id="volume-select" class="select__item">
+								<option value="700">700</option>
+								<option value="500">500</option>
+								<option value="300">300</option>
+								<option value="100">100</option>
+							</select>
+						</label>
+					</div>
+					<div class="order-form__stepper stepper">
+						<button class="stepper__btn stepper__btn--plus btn-reset" type="button" aria-label="Увеличить количество">
+						</button>
+						<label class="stepper__field">
+							<input name="quantity" id="quantity" type="text" value="1" maxlength="3" class="stepper__input input-reset" required>
+						</label>
+						<button class="stepper__btn stepper__btn--minus stepper__btn--disabled btn-reset" type="button" aria-label="Уменьшить количество">
+						</button>
+					</div>
+					<label class="order-form__check order-check ">
+						<input name="accept" class="order-check__input visually-hidden" type="checkbox" required>
+						<span class="order-check__box "></span>
+						<span class="order-check__text ">Даю согласие на обработку
+							персональных данных</span>
+					</label>
+					<output for="quantity volume-select" class="order-form__price">
+						2492₽
+					</output>
+					<button class="order-form__submit btn-reset main-btn-link main-btn-link--white" type="submit">Оформить заказ</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>

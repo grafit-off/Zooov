@@ -26,9 +26,11 @@
 				margin-right: 0;
 			}
 		}
+
 		&--textarea {
 			flex: 0 0 100%;
 		}
+
 		@media (max-width: $md2+px) {
 			flex: 0 0 100%;
 		}
@@ -47,16 +49,7 @@
 		}
 	}
 	&__label {
-		position: absolute;
-		top: 14px;
-		left: 15px;
 		color: var(--color-shilo);
-		transition: top 0.3s ease;
-		&--focused {
-			top: 4px;
-			left: 10px;
-			transform: scale(0.8);
-		}
 	}
 
 	&__check {

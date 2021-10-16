@@ -16,6 +16,8 @@
 		.header__image {
 			width: 62px;
 			height: 62px;
+			transition: height 0.3s ease, width 0.3s ease;
+
 			@media (max-width: $md2+px) {
 				width: 38px;
 				height: 38px;
@@ -23,6 +25,7 @@
 		}
 		.header__link {
 			color: var(--color-black);
+			transition: color 0.3s ease;
 		}
 	}
 	&__container {
@@ -40,6 +43,7 @@
 		width: 80px;
 		height: 80px;
 		object-fit: cover;
+		transition: height 0.3s ease, width 0.3s ease;
 		@media (max-width: $md2+px) {
 			width: 60px;
 			height: 60px;
@@ -118,6 +122,7 @@
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 140%;
+		transition: color 0.3s ease;
 		&::after {
 			content: "";
 			position: absolute;
@@ -133,7 +138,12 @@
 			transform: translateZ(0);
 			transition: width 0.3s ease;
 		}
-
+		&--active {
+			&::after {
+				width: 100%;
+				transition: width 0.3s ease;
+			}
+		}
 		@media (min-width: 992px) {
 			&:hover {
 				&::after {

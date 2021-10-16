@@ -1,0 +1,17 @@
+.field {
+	position: relative;
+	&__input {
+	}
+	&__label {
+		position: absolute;
+		top: 14px;
+		left: 15px;
+		pointer-events: none;
+		transition: top 0.3s ease, font-size 0.3s ease;
+		&--focused {
+			font-size: 11px;
+			top: 4px;
+			transition: top 0.3s ease, font-size 0.3s ease;
+		}
+	}
+}

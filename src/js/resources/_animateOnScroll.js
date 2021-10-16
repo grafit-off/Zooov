@@ -15,11 +15,11 @@ if (!isMobileDevice) {
 	};
 	if (animItems.length != 0) {
 		animItems.forEach(el => {
-			elementInViewport(el, .5, .5);
+			elementInViewport(el, .1, .1);
 		})
 		document.addEventListener('scroll', () => {
 			animItems.forEach(el => {
-				elementInViewport(el, .5, .5);
+				elementInViewport(el, .1, .1);
 			});
 		});
 	};

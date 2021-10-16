@@ -1,0 +1,71 @@
+.calc-modal {
+	max-width: 870px;
+	padding: 55px;
+	@media (max-width: $md3+px) {
+		padding: 70px 24px 24px 24px;
+	}
+	&__info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		@media (max-width: $md3+px) {
+		}
+	}
+
+	&__title {
+		flex: 0 0 50%;
+		margin-bottom: 24px;
+		color: var(--color-tamarillo);
+
+		font-family: $ff2;
+		font-weight: 700;
+		font-size: 40px;
+		letter-spacing: 0.02em;
+		@media (max-width: $md3+px) {
+			flex: 0 0 100%;
+			order: 0;
+			margin-bottom: 15px;
+
+			font-size: 32px;
+		}
+	}
+	&__social {
+		flex: 0 0 50%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 24px;
+		@media (max-width: $md3+px) {
+			flex: 0 0 100%;
+			order: 1;
+			justify-content: flex-start;
+			margin-bottom: 0;
+		}
+		@media (max-width: $md4+px) {
+			flex-direction: column;
+		}
+	}
+	&__link {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+		@media (max-width: $md4+px) {
+			width: 100%;
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__desc {
+		flex: 0 0 100%;
+		@media (max-width: $md3+px) {
+			flex: 0 0 100%;
+			order: 0;
+			margin-bottom: 15px;
+		}
+	}
+}

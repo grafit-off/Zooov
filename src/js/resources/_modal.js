@@ -97,11 +97,9 @@ function bodyLock() {
 	body.style.paddingRight = lockPaddingValue;
 	if (!body.classList.contains('lock')) {
 		bodyWasNotLock = true;
-		if (isiPhone || isiPad || isiPod) {
-			disableScroll();
-		} else {
-			body.classList.add('lock');
-		}
+
+		body.classList.add('lock');
+
 	} else {
 		bodyWasNotLock = false;
 	}
@@ -121,11 +119,7 @@ function bodyUnlock() {
 		}
 		body.style.paddingRight = '0px';
 		if (bodyWasNotLock == true) {
-			if (isiPhone || isiPad || isiPod) {
-				enableScroll();
-			} else {
-				body.classList.remove('lock');
-			}
+			body.classList.remove('lock');
 		}
 	}, timeout);
 }

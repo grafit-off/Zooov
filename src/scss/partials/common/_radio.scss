@@ -1,0 +1,84 @@
+/* Radio */
+.radio {
+	display: flex;
+	align-items: center;
+	&__text {
+		color: var(--color-black);
+		font-size: 14px;
+		user-select: none;
+		cursor: pointer;
+	}
+	&__box {
+		position: relative;
+		display: inline-block;
+		flex: 0 0 16px;
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+		overflow: hidden;
+
+		border: 1px solid var(--color-pewter);
+		border-radius: 50%;
+		background-color: #fff;
+
+		cursor: pointer;
+		&::before {
+			content: "";
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			width: 10px;
+			height: 10px;
+			overflow: hidden;
+
+			opacity: 0;
+			border-radius: 50%;
+			background-color: var(--color-tamarillo);
+			transform: translate(-50%, -50%);
+			transition: opacity 0.2s ease;
+		}
+	}
+	/* Checked */
+	&__input:checked + &__box {
+		border: 1px solid var(--color-tamarillo);
+		transition: border 0.2s ease;
+	}
+	&__input:checked + &__box::before {
+		opacity: 1;
+		transition: opacity 0.2s ease;
+	}
+	// -- //
+
+	/* Focused */
+	&__input:focus + &__box {
+		border: 2px solid #70d03a;
+	}
+
+	&__input:focus-visible + &__box {
+		border: 2px solid #70d03a;
+	}
+
+	&__input:focus:not(:focus-visible) + &__box {
+		border: 1px solid var(--color-tamarillo);
+	}
+	// -- //
+
+	/* Disabled */
+	&__input:disabled + &__box {
+		border: 3px solid #9b9b9b;
+	}
+	&__input:disabled ~ * {
+		cursor: default;
+	}
+	// -- //
+
+	/* Checked disabled */
+	&__input:checked:disabled + &__box::before {
+		background-color: #9b9b9b;
+		transition: opacity 0.2s ease;
+	}
+	// -- //
+}
+// -- //

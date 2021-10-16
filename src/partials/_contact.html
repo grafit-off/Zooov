@@ -1,4 +1,4 @@
-<section class="contact" id="contact">
+<section class="contact" id="contact" data-aos="fade-up" data-aos-delay="0">
 	<div class="contact__container container">
 		<div class="contact__info contact-info">
 			<h2 class="contact-info__heading main-heading text-reset">
@@ -11,10 +11,10 @@
 			<a href="tel:+79000000000" class="contact-info__phone link-reset">
 				+7 (900)000-00-00
 			</a>
-			<a href="https://api.whatsapp.com/send?phone=78051196325" target="_blank" rel="noopener" class="contact-info__link contact-info__link--wa link-reset">
+			<a href="https://api.whatsapp.com/send?phone=78051196325" target="_blank" rel="noopener" class="contact-info__link contact-info__link--wa social-link social-link--wa  link-reset">
 				Написать в WhatsApp
 			</a>
-			<a href="https://telegram.me/ncl_ch" target="_blank" rel="noopener" class="contact-info__link contact-info__link--tg link-reset">
+			<a href="https://telegram.me/ncl_ch" target="_blank" rel="noopener" class="contact-info__link contact-info__link--tg social-link social-link--tg link-reset">
 				Написать в Telegram
 			</a>
 			<p class="contact-info__text main-text text-reset">
@@ -24,7 +24,7 @@
 				и следите за новостями
 			</p>
 		</div>
-		<form action="" class="contact__form contact-form">
+		<form class="contact__form contact-form">
 			<h3 class="contact-form__heading text-reset">
 				Остались вопросы?
 			</h3>
@@ -32,21 +32,21 @@
 				Напишите нам и мы обязательно подробно на них ответим.
 			</p>
 			<div class="contact-form__fields fields">
-				<div class="contact-form__item contact-form__item--name">
-					<input type="text" id="input-name" class="contact-form__input  input input-reset" required>
-					<label for="input-name" class="contact-form__label"> Имя </label>
+				<div class="contact-form__item contact-form__item--name field">
+					<input name="name" autocomplete="name" type="text" data-validation="notNumber" id="input-name" class="contact-form__input field__input  input input-reset" required>
+					<label for="input-name" class="contact-form__label field__label"> Имя </label>
 				</div>
-				<div class="contact-form__item contact-form__item--email">
-					<input type="email" id="input-email" class="contact-form__input input input-reset" required>
-					<label for="input-email" class="contact-form__label"> Email </label>
+				<div class="contact-form__item contact-form__item--email field">
+					<input name="email" autocomplete="email" data-validation="email" type="email" id="input-email" class="contact-form__input field__input input input-reset" required>
+					<label for="input-email" class="contact-form__label field__label"> Email </label>
 				</div>
 				<div class="contact-form__item contact-form__item--textarea">
-					<textarea class="contact-form__textarea input input-reset" required placeholder="Ваш вопрос..."></textarea>
+					<textarea name="message" autocomplete="off" data-validation="notEmpty" class="contact-form__textarea input input-reset" required placeholder="Ваш вопрос..."></textarea>
 				</div>
-				<label class="contact-form__check check">
-					<input class="check__input visually-hidden" type="checkbox">
-					<span class="check__box"></span>
-					<span class="check__text">Даю согласие на обработку
+				<label class="contact-form__check contact-check ">
+					<input name="accept" class="contact-check__input visually-hidden" type="checkbox" required>
+					<span class="contact-check__box "></span>
+					<span class="contact-check__text ">Даю согласие на обработку
 						персональных данных</span>
 				</label>
 				<button class="contact-form__submit btn-reset main-btn-link main-btn-link--white" type="submit">Отправить</button>

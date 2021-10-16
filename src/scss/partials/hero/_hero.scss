@@ -52,6 +52,8 @@
 		color: var(--color-white);
 	}
 	&__text {
+		display: block;
+
 		font-family: $ff2;
 		font-size: 54px;
 		font-weight: 700;

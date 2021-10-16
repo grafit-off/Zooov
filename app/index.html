@@ -11,8 +11,8 @@
 	<meta name="format-detection" content='telephone=no' />
 
 	<!-- SEO META Краткое описание, ключевые слова -->
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="description" content="Здоровое питание для ваших питомцев" />
+	<meta name="keywords" content="здоровое питание, питомцыЮ собаки, корм, диета" />
 
 	<!--  Индексирование странички
 		<meta name="robots" content="" />
@@ -94,11 +94,14 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="resources/libs/swiper-bundle.min.css" />
+	<link href="resources/libs/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css" />
-	<title>Zooov</title>
+	<title>Zooov - Питание, которое полюбит Ваш хвостик!</title>
+
 </head>
 
 <body class="body">
+
 	<header class="header fixed-padding" id="header">
 	<div class="header__container container">
 		<a class="header__logo link-reset">
@@ -139,51 +142,53 @@
 	</div>
 </header>
 	<main class="main-content">
-		<section class="hero" id="hero">
+		<section class="hero" id="hero" data-aos="fade-up">
 	<div class="hero__container container">
 		<h1 class="hero__heading text-reset">
-			<p class="hero__text text-reset">
+			<span class="hero__text text-reset" data-aos="fade-up" data-aos-delay="100">
 				Питание, которое
-				<strong class="ellipse">
+				<strong class="ellipse" data-aos="stay" data-aos-delay="100">
 					полюбит
 					<svg class="ellipse__svg ellipse__svg--hero">
 						<use xlink:href="img/sprite.svg#ellipse"></use>
 					</svg>
 				</strong>
 				ваш хвостик
-			</p>
-			<p class="hero__text hero__text--sm text-reset">
+			</span>
+			<span class="hero__text hero__text--sm text-reset" data-aos="fade-up" data-aos-delay="250">
 				Натуральные рационы питания для собак по системе
 				<strong class="hero__strong">BARF</strong>
-			</p>
+			</span>
 		</h1>
-		<a href="#diet" class="hero__link main-btn-link main-btn-link--red link-reset">Выбрать рацион</a>
+		<div class="hero__link-wrap" data-aos="fade-up" data-aos-delay="500">
+			<a href="#diet" class="hero__link main-btn-link main-btn-link--red link-reset">Выбрать рацион</a>
+		</div>
 	</div>
 </section>
 		<section class="about section" id="about">
 	<div class="about__container container">
 		<div class="about__info">
-			<h2 class="about__heading main-heading text-reset">
+			<h2 class="about__heading main-heading text-reset" data-aos="fade-up" data-aos-delay="0">
 				Что такое BARF
 			</h2>
-			<p class="about__text main-text text-reset">
+			<p class="about__text main-text text-reset  " data-aos="fade-up" data-aos-delay="100">
 				BARF (Biologically Appropriate Raw Food) — система питания собак, основанная на сырых натуральных продуктах. Такой рацион максимально приближен к естественному пищевому поведению хищников, а значит биологически правилен.
 			</p>
-			<p class="about__text about__text--lg text-reset">
+			<p class="about__text about__text--lg text-reset " data-aos="fade-up" data-aos-delay="200">
 				После перехода на питание по системе BARF у собак:
 			</p>
-			<ul class="about__list list-reset">
-				<li class="about__item main-text">Нормализуется пищеварение </li>
-				<li class="about__item main-text">Проходят аллергические реакции</li>
-				<li class="about__item main-text">Прекращается образование зубного камня</li>
-				<li class="about__item main-text">Появляется больше энергии</li>
-				<li class="about__item main-text">Увеличивается продолжительность жизни</li>
+			<ul class="about__list list-reset ">
+				<li class="about__item main-text" data-aos="fade-up" data-aos-delay="300">Нормализуется пищеварение </li>
+				<li class="about__item main-text" data-aos="fade-up" data-aos-delay="400">Проходят аллергические реакции</li>
+				<li class="about__item main-text" data-aos="fade-up" data-aos-delay="500">Прекращается образование зубного камня</li>
+				<li class="about__item main-text" data-aos="fade-up" data-aos-delay="600">Появляется больше энергии</li>
+				<li class="about__item main-text" data-aos="fade-up" data-aos-delay="700">Увеличивается продолжительность жизни</li>
 			</ul>
 		</div>
-		<div class="about__image">
+		<div class="about__image" data-aos="fade-up" data-aos-delay="0">
 			<img src="img/about-img.jpg" alt="Песик кушает мясо" class="about__img">
 		</div>
-		<div class="about__classification ">
+		<div class="about__classification " data-aos="fade-up" data-aos-delay="0">
 			<div class="classification-swiper " data-mobile="false">
 				<div class="classification-swiper__pagination swiper-pagination"></div>
 				<div class="classification-swiper__wrapper">
@@ -255,15 +260,15 @@
 		<section class="diet section" id="diet">
 	<div class="diet__container container">
 		<div class="diet__info">
-			<h2 class="diet__heading main-heading text-reset">
-				Рационы <span class="ellipse">
+			<h2 class="diet__heading main-heading text-reset" data-aos="fade-up" data-aos-delay="0">
+				Рационы <span class="ellipse" data-aos="stay">
 					ZOOOV
 					<svg class="ellipse__svg ellipse__svg--diet">
 						<use xlink:href="img/sprite.svg#ellipse"></use>
 					</svg>
 				</span>
 			</h2>
-			<p class="diet__text text-reset main-text">
+			<p class="diet__text text-reset main-text" data-aos="fade-up" data-aos-delay="0">
 				Система питания взрослой собаки не подойдет для щенка, поэтому мы создали разные
 				по составу рационы <span class="diet__text--strong">ZOOOV</span>. Вы сможете заказать полноценное питание исходя из возраста, веса и даже вкусовых предпочтений вашего друга. <span class="diet__text--strong">ZOOOV</span> заботится о каждой собаке.
 			</p>
@@ -271,105 +276,105 @@
 		<div class="diet__swiper diet-swiper">
 			<div class="diet-swiper__pagination swiper-pagination"></div>
 			<div class="diet-swiper__wrapper">
-				<div class="diet-swiper__slide diet-slide">
-					<article class="diet-slide__wrapper">
-						<div class="diet-slide__info">
-							<img src="img/diet-1.jpg" alt="Упаковка еды для взрослых собак" class="diet-slide__image">
-							<h3 class="diet-slide__heading main-text text-reset">
+				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="0">
+					<article class="product__wrapper">
+						<div class="product__info">
+							<img src="img/diet-1.jpg" alt="Упаковка еды для взрослых собак" class="product__image">
+							<h3 class="product__heading main-text text-reset">
 								Для взрослых собак
 							</h3>
-							<div class="diet-slide__type">
+							<div class="product__type">
 								Индейка/Говядина
 							</div>
-							<p class="diet-slide__text text-reset">
+							<p class="product__text text-reset">
 								Подходит для ежедвеного кормления. Богат животными белками и Омега-3.
 							</p>
-							<div class="diet-slide__weight text-reset">
+							<div class="product__weight text-reset">
 								700г / 500г / 300г / 150г / 100г
 							</div>
-							<button type="button" class="diet-slide__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
+							<button type="button" class="product__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
 						</div>
-						<buutton class="diet-slide__order main-btn-link main-btn-link--white btn-reset modal-btn" data-path='modal-order'>Заказать</buutton>
+						<button class="product__order main-btn-link main-btn-link--white btn-reset modal-btn" data-path='modal-order'>Заказать</button>
 					</article>
 				</div>
-				<div class="diet-swiper__slide diet-slide">
-					<article class="diet-slide__wrapper">
-						<div class="diet-slide__info">
-							<img src="img/diet-2.jpg" alt="Упаковка еды для взрослых собак" class="diet-slide__image">
-							<h3 class="diet-slide__heading main-text text-reset">
+				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+					<article class="product__wrapper">
+						<div class="product__info">
+							<img src="img/diet-2.jpg" alt="Упаковка еды для взрослых собак" class="product__image">
+							<h3 class="product__heading main-text text-reset">
 								Для щенков
 							</h3>
-							<div class="diet-slide__type">
+							<div class="product__type">
 								Индейка/Говядина
 							</div>
-							<p class="diet-slide__text text-reset">
+							<p class="product__text text-reset">
 								Подходит для ежедвеного кормления. Богат животными белками и Омега-3.
 							</p>
-							<div class="diet-slide__weight text-reset">
+							<div class="product__weight text-reset">
 								700г / 500г / 300г / 150г / 100г
 							</div>
-							<button type="button" class="diet-slide__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
+							<button type="button" class="product__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
 						</div>
-						<buutton class="diet-slide__order main-btn-link main-btn-link--white btn-reset modal-btn" data-path='modal-order'>Заказать</buutton>
+						<button class="product__order main-btn-link main-btn-link--white btn-reset modal-btn" data-path='modal-order'>Заказать</button>
 					</article>
 				</div>
-				<div class="diet-swiper__slide diet-slide">
-					<article class="diet-slide__wrapper">
-						<div class="diet-slide__info">
-							<img src="img/diet-3.jpg" alt="Упаковка еды для взрослых собак" class="diet-slide__image">
-							<h3 class="diet-slide__heading main-text text-reset">
+				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+					<article class="product__wrapper">
+						<div class="product__info">
+							<img src="img/diet-3.jpg" alt="Упаковка еды для взрослых собак" class="product__image">
+							<h3 class="product__heading main-text text-reset">
 								Для взрослых собак
 							</h3>
-							<div class="diet-slide__type">
+							<div class="product__type">
 								Баранина/Кролик
 							</div>
-							<p class="diet-slide__text text-reset">
+							<p class="product__text text-reset">
 								Подходит для ежедвеного кормления. Богат животными белками и Омега-3.
 							</p>
-							<div class="diet-slide__weight text-reset">
+							<div class="product__weight text-reset">
 								700г / 500г / 300г / 150г / 100г
 							</div>
-							<button type="button" class="diet-slide__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
+							<button type="button" class="product__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
 						</div>
-						<buutton class="diet-slide__order main-btn-link main-btn-link--white btn-reset  modal-btn" data-path='modal-order'>Заказать</buutton>
+						<button class="product__order main-btn-link main-btn-link--white btn-reset  modal-btn" data-path='modal-order'>Заказать</button>
 					</article>
 				</div>
-				<div class="diet-swiper__slide diet-slide">
-					<article class="diet-slide__wrapper">
-						<div class="diet-slide__info">
-							<img src="img/diet-4.jpg" alt="Упаковка еды для взрослых собак" class="diet-slide__image">
-							<h3 class="diet-slide__heading main-text text-reset">
+				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="300">
+					<article class="product__wrapper">
+						<div class="product__info">
+							<img src="img/diet-4.jpg" alt="Упаковка еды для взрослых собак" class="product__image">
+							<h3 class="product__heading main-text text-reset">
 								Для щенков
 							</h3>
-							<div class="diet-slide__type">
+							<div class="product__type">
 								Индейка/Говядина
 							</div>
-							<p class="diet-slide__text text-reset">
+							<p class="product__text text-reset">
 								Подходит для ежедвеного кормления. Богат животными белками и Омега-3.
 							</p>
-							<div class="diet-slide__weight text-reset">
+							<div class="product__weight text-reset">
 								700г / 500г / 300г / 150г / 100г
 							</div>
-							<button type="button" class="diet-slide__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
+							<button type="button" class="product__btn btn-reset modal-btn" data-path='modal-descr' aria-label="Открыть описание"></button>
 						</div>
-						<buutton class="diet-slide__order main-btn-link main-btn-link--white btn-reset  modal-btn" data-path='modal-order'>Заказать</buutton>
+						<button class="product__order main-btn-link main-btn-link--white btn-reset  modal-btn" data-path='modal-order'>Заказать</button>
 					</article>
 				</div>
 			</div>
 		</div>
-		<div class="diet__calculate diet-calculate">
+		<div class="diet__calculate diet-calculate" data-aos="fade-up" data-aos-delay="0">
 			<p class="diet-calculate__text text-reset">Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
-			<button class="diet-calculate__btn main-btn-link main-btn-link--red modal-btn btn-reset" data-path='modal-calculate'>Расчитать</button>
+			<button class="diet-calculate__btn main-btn-link main-btn-link--red modal-btn btn-reset" data-path='modal-calc'>Расчитать</button>
 		</div>
 	</div>
 </section>
 		<section class="pluses section" id="pluses">
 	<div class="pluses__container container">
-		<h2 class="pluses__heading main-heading text-reset">
+		<h2 class="pluses__heading main-heading text-reset" data-aos="fade-left" data-aos-delay="0">
 			Почему ZOOOV
 		</h2>
 		<ul class="pluses__list list-reset">
-			<li class="pluses__item  plus plus--paper">
+			<li class="pluses__item  plus plus--paper" data-aos="fade-up" data-aos-delay="100">
 				<h3 class="plus__heading text-reset">
 					Натурально
 				</h3>
@@ -377,7 +382,7 @@
 					Все продукты тщательно отбираем у проверенных поставщиков.
 				</p>
 			</li>
-			<li class="pluses__item  plus plus--heart">
+			<li class="pluses__item  plus plus--heart" data-aos="fade-left" data-aos-delay="200">
 				<h3 class="plus__heading text-reset">
 					Здорово
 				</h3>
@@ -386,7 +391,7 @@
 					вашего хвостика.
 				</p>
 			</li>
-			<li class="pluses__item  plus plus--rocket">
+			<li class="pluses__item  plus plus--rocket" data-aos="fade-left" data-aos-delay="300">
 				<h3 class="plus__heading text-reset">
 					Быстро
 				</h3>
@@ -394,7 +399,7 @@
 					Сделайте заказ на сайте
 					и с вами свяжется наш менеджер для уточнения деталей.</p>
 			</li>
-			<li class="pluses__item  plus plus--smile">
+			<li class="pluses__item  plus plus--smile" data-aos="fade-left" data-aos-delay="400">
 				<h3 class="plus__heading text-reset">
 					Удобно
 				</h3>
@@ -406,7 +411,7 @@
 </section>
 		<section class="zooov" id="zooov">
 	<div class="zooov__container container">
-		<div class="zooov__images">
+		<div class="zooov__images" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2000">
 			<img src="img/zooov.png" alt="Собачки" class="zooov__image zooov__image--desk">
 			<img src="img/zooov-mobile.png" alt="Собачки" class="zooov__image  zooov__image--mobile">
 			<img src="img/zooov-3.png" alt="Питбуль" class="zooov__image zooov__image--dog">
@@ -414,22 +419,22 @@
 		</div>
 
 		<div class="zooov__info">
-			<h2 class="zooov__heading main-heading text-reset">
+			<h2 class="zooov__heading main-heading text-reset" data-aos="fade-up" data-aos-delay="0">
 				С заботой и <span class="zooov__dashes">любовь</span> от <span class="zooov__dashes zooov__dashes--mobile">Zooov</span>
 			</h2>
-			<p class="zooov__text text-reset main-text">
+			<p class="zooov__text text-reset main-text" data-aos="fade-left" data-aos-delay="0">
 				Мы сами владельцы собак и знаем, как важно правильное и качественное питание для долгой и счастливой жизни вашего питомца. Для нас ZOOOV это не просто бизнес, это наш вклад в повышение качества жизни всех собак.
 			</p>
-			<p class="zooov__text text-reset main-text">
+			<p class="zooov__text text-reset main-text" data-aos="fade-left" data-aos-delay="50">
 				Мы знаем, как правильно подобрать и переработать мясо, субпродукты, овощи и фрукты, чтобы питание вашего питомца было максимально сбалансированным и полезным.
 			</p>
-			<p class="zooov__text text-reset main-text">
+			<p class="zooov__text text-reset main-text" data-aos="fade-left" data-aos-delay="100">
 				Обычного сырого мяса из магазина будет недостаточно для полноценного питания собаки. ZOOOV — экономия времени, вам не придется искать необходимые составляющие для рациона.
 			</p>
-			<p class="zooov__text text-reset main-text">
+			<p class="zooov__text text-reset main-text" data-aos="fade-left" data-aos-delay="150">
 				Мы сами отбираем мясо, кости, легкие, печень и другие говяжьи, кроличьи и птичьи субпродукты у проверенных поставщиков. Закупаем органические овощи и используем разнообразные масла, такие как конопляное и льняное.
 			</p>
-			<p class="zooov__text text-reset main-text">
+			<p class="zooov__text text-reset main-text" data-aos="fade-left" data-aos-delay="200">
 				ZOOOV — это удобно, мы доставляем готовый рацион на две недели уже смешанным, расфасованным и упакованным в порционные лотки,готовыми к заморозке. За два часа до кормления достаточно переместить контейнер из морозилки в холодильник для ПРАВИЛЬНОЙ разморозки.
 			</p>
 		</div>
@@ -437,29 +442,29 @@
 </section>
 		<section class="delivery section" id="delivery">
 	<div class="delivery__container container">
-		<h2 class="delivery__heading main-heading text-reset">Как получить ZOOOV?</h2>
+		<h2 class="delivery__heading main-heading text-reset" data-aos="fade-left" data-aos-delay="0">Как получить ZOOOV?</h2>
 		<ul class="delivery__list list-reset">
-			<li class="delivery__item delivery-item delivery-item--package">
+			<li class="delivery__item delivery-item delivery-item--package" data-aos="fade-up" data-aos-anchor-placement="center-center	" data-aos-delay="0">
 				<h3 class="delivery-item__heading text-reset">Закажите рацион</h3>
 				<p class="delivery-item__text main-text text-reset">
 					Выберите рацион для своей собаки. Если не знаете сколько
-					и какой – <button class="delivery-item__btn modal-btn btn-reset" data-path="calculate">мы подскажем</button>.
+					и какой – <button class="delivery-item__btn modal-btn btn-reset" data-path="modal-calc">мы подскажем</button>.
 				</p>
 			</li>
-			<li class="delivery__item delivery-item delivery-item--phone">
+			<li class="delivery__item delivery-item delivery-item--phone" data-aos="fade-up" data-aos-anchor-placement="center-center	" data-aos-delay="100">
 				<h3 class="delivery-item__heading text-reset">Подтвердите заказ</h3>
 				<p class="delivery-item__text main-text text-reset">
 					Мы свяжемся с вами для подтверждения заказа
 					и уточнения деталей.
 				</p>
 			</li>
-			<li class="delivery__item delivery-item delivery-item--clock">
+			<li class="delivery__item delivery-item delivery-item--clock" data-aos="fade-up" data-aos-anchor-placement="center-center	" data-aos-delay="200">
 				<h3 class="delivery-item__heading text-reset">Ожидайте доставки</h3>
 				<p class="delivery-item__text main-text text-reset">
 					Привозим заказ на следующий день. По СПб – 350₽, при заказе от 3 500₽ – бесплатно. Лен. область – по договоренности.
 				</p>
 			</li>
-			<li class="delivery__item delivery-item delivery-item--heart">
+			<li class="delivery__item delivery-item delivery-item--heart" data-aos="fade-up" data-aos-anchor-placement="center-center	" data-aos-delay="300">
 				<h3 class="delivery-item__heading text-reset">Радуйте своего питомца</h3>
 				<p class="delivery-item__text main-text text-reset">
 					Просто разморозьте рацион: при комнатной температуре – 3 часа, в холодильнике – 12-15 часов.
@@ -470,9 +475,9 @@
 </section>
 		<section class="faq section" id="faq">
 	<div class="faq__container container">
-		<h2 class="faq__heading main-heading text-reset">Частые вопросы</h2>
+		<h2 class="faq__heading main-heading text-reset" data-aos="fade-right" data-aos-delay="100">Частые вопросы</h2>
 		<ul class="faq__accordion accordion list-reset">
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="0">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Не опасны ли бактерии, которые находятся в сыром мясе?
@@ -484,7 +489,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="50">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Надо ли давать дополнительно витамины к рациону BARF?
@@ -496,7 +501,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="100">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						А если моя собака уже давно питается промышленным кормом и у нее нет проблем со здоровьем?
@@ -508,7 +513,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="150">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Можно ли смешивать натуральный корм и корм промышленного производства?
@@ -520,7 +525,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="200">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Могу ли я сам составить для своей собаки рацион по системе BARF?
@@ -532,7 +537,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="250">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Присутствует ли в ZOOOV рационах рыба?
@@ -544,7 +549,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="300">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Как перевести питомца на натуральное питание?
@@ -556,7 +561,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="350">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						Как готовить рацион ZOOOV?
@@ -568,7 +573,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="accordion__item">
+			<li class="accordion__item" data-aos="fade-up" data-aos-delay="400">
 				<h3 class="accordion__heading text-reset">
 					<button class="accordion__trigger main-text btn-reset" aria-expanded="false">
 						При переходе на рацион ZOOOV у собаки начались проблемы с ЖКТ.
@@ -584,7 +589,7 @@
 		</ul>
 	</div>
 </section>
-		<section class="contact" id="contact">
+		<section class="contact" id="contact" data-aos="fade-up" data-aos-delay="0">
 	<div class="contact__container container">
 		<div class="contact__info contact-info">
 			<h2 class="contact-info__heading main-heading text-reset">
@@ -597,10 +602,10 @@
 			<a href="tel:+79000000000" class="contact-info__phone link-reset">
 				+7 (900)000-00-00
 			</a>
-			<a href="https://api.whatsapp.com/send?phone=78051196325" target="_blank" rel="noopener" class="contact-info__link contact-info__link--wa link-reset">
+			<a href="https://api.whatsapp.com/send?phone=78051196325" target="_blank" rel="noopener" class="contact-info__link contact-info__link--wa social-link social-link--wa  link-reset">
 				Написать в WhatsApp
 			</a>
-			<a href="https://telegram.me/ncl_ch" target="_blank" rel="noopener" class="contact-info__link contact-info__link--tg link-reset">
+			<a href="https://telegram.me/ncl_ch" target="_blank" rel="noopener" class="contact-info__link contact-info__link--tg social-link social-link--tg link-reset">
 				Написать в Telegram
 			</a>
 			<p class="contact-info__text main-text text-reset">
@@ -610,7 +615,7 @@
 				и следите за новостями
 			</p>
 		</div>
-		<form action="" class="contact__form contact-form">
+		<form class="contact__form contact-form">
 			<h3 class="contact-form__heading text-reset">
 				Остались вопросы?
 			</h3>
@@ -618,21 +623,21 @@
 				Напишите нам и мы обязательно подробно на них ответим.
 			</p>
 			<div class="contact-form__fields fields">
-				<div class="contact-form__item contact-form__item--name">
-					<input type="text" id="input-name" class="contact-form__input  input input-reset" required>
-					<label for="input-name" class="contact-form__label"> Имя </label>
+				<div class="contact-form__item contact-form__item--name field">
+					<input name="name" autocomplete="name" type="text" data-validation="notNumber" id="input-name" class="contact-form__input field__input  input input-reset" required>
+					<label for="input-name" class="contact-form__label field__label"> Имя </label>
 				</div>
-				<div class="contact-form__item contact-form__item--email">
-					<input type="email" id="input-email" class="contact-form__input input input-reset" required>
-					<label for="input-email" class="contact-form__label"> Email </label>
+				<div class="contact-form__item contact-form__item--email field">
+					<input name="email" autocomplete="email" data-validation="email" type="email" id="input-email" class="contact-form__input field__input input input-reset" required>
+					<label for="input-email" class="contact-form__label field__label"> Email </label>
 				</div>
 				<div class="contact-form__item contact-form__item--textarea">
-					<textarea class="contact-form__textarea input input-reset" required placeholder="Ваш вопрос..."></textarea>
+					<textarea name="message" autocomplete="off" data-validation="notEmpty" class="contact-form__textarea input input-reset" required placeholder="Ваш вопрос..."></textarea>
 				</div>
-				<label class="contact-form__check check">
-					<input class="check__input visually-hidden" type="checkbox">
-					<span class="check__box"></span>
-					<span class="check__text">Даю согласие на обработку
+				<label class="contact-form__check contact-check ">
+					<input name="accept" class="contact-check__input visually-hidden" type="checkbox" required>
+					<span class="contact-check__box "></span>
+					<span class="contact-check__text ">Даю согласие на обработку
 						персональных данных</span>
 				</label>
 				<button class="contact-form__submit btn-reset main-btn-link main-btn-link--white" type="submit">Отправить</button>
@@ -643,12 +648,255 @@
 	</main>
 	<footer class="footer">
 	<div class="footer__container container">
-		FOOTER
+		<small class="footer__copy">
+			ИП Коваленко Евгений Геннадьевич ИНН784215731801, адрес производства г. Санкт-Петербург 17-я линия В.О 66, пом. 2/07
+		</small>
+		<a href="#" class="footer__link link-reset">
+			Публичная оферта
+		</a>
+		<a href="#" class="footer__link link-reset">
+			Политика конфеденциальности
+		</a>
 	</div>
 </footer>
-	
+	<div class='modal' id='modal-descr' aria-labelledby="modal-descr-title" aria-describedby='modal-descr-desc' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content descr-modal'>
+			<button aria-label='Закрыть модальное окно' class='descr-modal__close modal__close close-modal btn-reset'>
+			</button>
+			<div class="descr-modal__image-preview image-preview">
+				<div class="image-preview__main">
+					<img src="img/image-preview1.jpg" alt="" class="image-preview__main-img" aria-hidden="true">
+				</div>
+				<ul class="image-preview__list list-reset">
+					<li class="image-preview__item">
+						<button class="image-preview__button image-preview__button--active btn-reset" aria-label="Показть первое изображение">
+							<img src="img/image-preview1.jpg" alt="" class="image-preview__img" aria-hidden="true">
+						</button>
+					</li>
+					<li class="image-preview__item">
+						<button class="image-preview__button btn-reset" aria-label="Показть второе изображение">
+							<img src="img/image-preview2.jpg" alt="" class="image-preview__img" aria-hidden="true">
+						</button>
+					</li>
+					<li class="image-preview__item">
+						<button class="image-preview__button btn-reset" aria-label="Показть третье изображение">
+							<img src="img/image-preview3.jpg" alt="" class="image-preview__img" aria-hidden="true">
+						</button>
+					</li>
+					<li class="image-preview__item">
+						<button class="image-preview__button btn-reset" aria-label="Показть четвертое изображение">
+							<img src="img/image-preview4.jpg" alt="" class="image-preview__img" aria-hidden="true">
+						</button>
+					</li>
+				</ul>
+			</div>
+			<div class="descr-modal__info">
+				<h3 class='descr-modal__title text-reset' id='modal-descr-title'>
+					Для взрослых собак
+				</h3>
+				<div class="descr-modal__type">
+					Индейка/Говядина
+				</div>
+				<p class="descr-modal__text text-reset" id='modal-descr-desc'>
+					Подходит для ежедвеного кормления. Богат животными белками и Омега-3.
+				</p>
+				<p class="descr-modal__composition text-reset">
+					<span>Состав:</span> Мякоть баранины (46,5%), мясо кролика (23,5%), кости
+					кролика (10%), печень баранины (5%), почки бараньи (2,5%),
+					рубец бараний (2,5%), кабачок (3%), брокколи (3%), семена
+					конопли (2%), шпинат (1%), яблоко (1%), льняное масло,
+					конопляное масло.
+				</p>
+				<p class="descr-modal__value text-reset">
+					<span>Пищевая ценность на 100г: </span>174.9 ккал,
+					белки 16.45, жиры 11.9, углеводы 0.60
+				</p>
+				<div class="descr-modal__weight text-reset">
+					700г / 500г / 300г / 150г / 100г
+				</div>
+				<button class="descr-modal__order main-btn-link main-btn-link--white btn-reset modal-btn" data-path='modal-order'>Заказать</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class='modal' id='modal-order' aria-labelledby="modal-order-title" aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content order-modal'>
+			<button aria-label='Закрыть модальное окно' class='order-modal__close modal__close close-modal btn-reset'>
+			</button>
+			<div class="order-modal__image">
+				<img src="img/image-preview1.jpg" alt="" class="order-modal__img">
+			</div>
+			<form action="/" class="order-modal__form order-form">
+				<h3 class="order-form__title text-reset" id="modal-order-title">
+					Для взрослых собак
+				</h3>
+				<div class="order-form__type">
+					Баранина/Кролик
+				</div>
+				<fieldset class="order-form__fieldset">
+					<legend class="order-form__legend visually-hidden text-reset">
+						Контактная информация
+					</legend>
+					<div class="order-form__item field">
+						<input name="name" autocomplete="name" data-validation="notNumber" type="text" class="order-form__input form-input input-reset field__input" id="order-name" required>
+						<label for="order-name" class="order-form__label field__label">
+							Имя
+						</label>
+					</div>
+					<div class="order-form__item field">
+						<input name="tel" autocomplete="tel" data-validation="phone" type="text" class="order-form__input form-input input-reset field__input" id="order-tel" required>
+						<label for="order-name" class="order-form__label field__label">
+							Телефон
+						</label>
+					</div>
+					<div class="order-form__item field">
+						<input name="adress" autocomplete="on" data-validation="notNumber" type="text" class="order-form__input form-input input-reset field__input" id="order-adress" required>
+						<label for="order-name" class="order-form__label field__label">
+							Адрес
+						</label>
+					</div>
+					<div class="order-form__select select">
+						<label class="select__label">
+							<select name="volume" id="volume-select" class="select__item">
+								<option value="700">700</option>
+								<option value="500">500</option>
+								<option value="300">300</option>
+								<option value="100">100</option>
+							</select>
+						</label>
+					</div>
+					<div class="order-form__stepper stepper">
+						<button class="stepper__btn stepper__btn--plus btn-reset" type="button" aria-label="Увеличить количество">
+						</button>
+						<label class="stepper__field">
+							<input name="quantity" id="quantity" type="text" value="1" maxlength="3" class="stepper__input input-reset" required>
+						</label>
+						<button class="stepper__btn stepper__btn--minus stepper__btn--disabled btn-reset" type="button" aria-label="Уменьшить количество">
+						</button>
+					</div>
+					<label class="order-form__check order-check ">
+						<input name="accept" class="order-check__input visually-hidden" type="checkbox" required>
+						<span class="order-check__box "></span>
+						<span class="order-check__text ">Даю согласие на обработку
+							персональных данных</span>
+					</label>
+					<output for="quantity volume-select" class="order-form__price">
+						2492₽
+					</output>
+					<button class="order-form__submit btn-reset main-btn-link main-btn-link--white" type="submit">Оформить заказ</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+	<div class='modal' id='modal-calc' aria-labelledby="modal-calc-title" aria-describedby='modal-calc-desc' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+			<div class='modal__body calc-modal'>
+				<div class="calc-modal__info">
+					<h3 class='calc-modal__title text-reset' id='modal-calc-title'>
+						Рассчет рациона
+					</h3>
+					<div class="calc-modal__social">
+						<a href="https://api.whatsapp.com/send?phone=78051196325" target="_blank" rel="noopener" class="calc-modal__link social-link social-link--wa  link-reset">
+							WhatsApp
+						</a>
+						<a href="https://telegram.me/ncl_ch" target="_blank" rel="noopener" class="calc-modal__link social-link social-link--tg link-reset">
+							Telegram
+						</a>
+					</div>
+					<p class='calc-modal__desc text-reset' id='modal-calc-desc'>
+						Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона
+						для вашего хвостика. Или напишите нам в мессендерах.
+					</p>
+				</div>
+				<form class="calc-modal__form calc-form">
+					<fieldset class="calc-form__fieldset">
+						<legend class="calc-form__legend visually-hidden">
+							Контактная информация и информация о питомце
+						</legend>
+						<div class="calc-form__item">
+							<div class="calc-form__radio-box">
+								<label class="calc-form__radio radio">
+									<input class="radio__input visually-hidden" type="radio" name="radio" value="dog" required>
+									<span class="radio__box"></span>
+									<span class="radio__text">Взрослая собака</span>
+								</label>
+								<label class="calc-form__radio radio">
+									<input class="radio__input visually-hidden" type="radio" name="radio" value="puppy">
+									<span class="radio__box"></span>
+									<span class="radio__text">Щенок</span>
+								</label>
+							</div>
+							<div class="calc-form__prop calc-form__prop--weight field">
+								<input name="weight" type="number" data-validation="notEmpty" id="input-weight" class="calc-form__input calc-form__input--number field__input form-input input-reset" required>
+								<label for="input-weight" class="calc-form__label field__label"> Вес (кг) </label>
+							</div>
+							<div class="calc-form__prop  field">
+								<input name="age" type="text" data-validation="notEmpty" id="input-age" class="calc-form__input  field__input form-input input-reset" required>
+								<label for="input-age" class="calc-form__label field__label"> Возраст </label>
+							</div>
+							<div class="calc-form__name  field">
+								<input name="name" type="text" autocomplete="name" data-validation="notNumber" id="input-calc-name" class="calc-form__input field__input form-input input-reset" required>
+								<label for="input-calc-name" class="calc-form__label field__label"> Ваше имя </label>
+							</div>
+						</div>
+						<div class="calc-form__item calc-form__item--sec">
+							<div class="calc-form__tel  field">
+								<input name="tel" autocomplete="tel" type="tel" data-validation="phone" id="input-calc-tel" class="calc-form__input field__input form-input input-reset" required>
+								<label for="input-calc-tel" class="calc-form__label field__label"> Телефон </label>
+							</div>
+							<textarea name="message" autocomplete="off" class="calc-form__textarea form-input input-reset" placeholder="Если у вашего хвостика есть особенности здоровья – напишите об этом..."></textarea>
+						</div>
+					</fieldset>
+					<label class="calc-form__check order-check ">
+						<input name="accept" class="order-check__input visually-hidden" type="checkbox" required>
+						<span class="order-check__box "></span>
+						<span class="order-check__text ">Даю согласие на обработку
+							персональных данных</span>
+					</label>
+					<button class="calc-form__submit btn-reset main-btn-link main-btn-link--red" type="submit">Расчитать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class='modal' id='modal-response' aria-labelledby="modal-response-title" aria-describedby='modal-response-desc' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+			<div class='modal__body response-modal'>
+				<div class="response-modal__image">
+					<img src="img/diet-1.jpg" alt="Ваш рацион" class="response-modal__img">
+				</div>
+				<div class="response-modal__info">
+					<h3 class='response-modal__title text-reset' id='modal-response-title'>
+						Спасибо!
+					</h3>
+					<p class='response-modal__desc text-reset' id='modal-response-desc'>
+						Ваш заказ оформлен и передан менеджеру.
+						Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.
+					</p>
+					<p class='response-modal__desc text-reset'>
+						Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у оператора.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="snackbar" role="alert" hidden> Текст </div>
+
 
 	<script src="resources/libs/swiper-bundle.min.js"></script>
+	<script src="resources/libs/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

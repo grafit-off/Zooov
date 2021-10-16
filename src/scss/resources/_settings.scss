@@ -28,7 +28,7 @@
 
 	width: 100%;
 
-	background-color: var(--color-bg);
+	background-color: var(--color-white);
 
 	font-family: $ff;
 	font-size: $fz-text;
@@ -36,6 +36,14 @@
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	&::-webkit-scrollbar {
+		width: 6px;
+		background-color: var(--color-white);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--color-tamarillo);
+		border-radius: 10px;
+	}
 }
 
 .header {

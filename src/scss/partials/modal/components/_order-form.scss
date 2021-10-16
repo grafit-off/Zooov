@@ -1,0 +1,85 @@
+.order-form {
+	&__title {
+		margin-bottom: 4px;
+		color: var(--color-black);
+
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 130%;
+	}
+
+	&__type {
+		margin-bottom: 16px;
+		color: var(--color-pewter);
+
+		font-size: 15px;
+		line-height: 130%;
+	}
+
+	&__fieldset {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item {
+		flex: 0 0 100%;
+		margin-bottom: 16px;
+	}
+
+	&__input {
+	}
+
+	&__label {
+		color: var(--color-pewter);
+	}
+
+	&__select {
+		flex: 1 1 auto;
+		margin-right: 24px;
+		margin-bottom: 16px;
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+			margin-right: 0;
+		}
+	}
+
+	&__stepper {
+		flex: 0 0 35%;
+		margin-bottom: 16px;
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+		}
+	}
+
+	&__check {
+		flex: 0 0 100%;
+		margin-bottom: 36px;
+		@media (max-width: $md3+px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__price {
+		color: var(--color-black);
+
+		font-family: $ff2;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+			margin-bottom: 24px;
+
+			text-align: center;
+		}
+	}
+
+	&__submit {
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+		}
+	}
+}

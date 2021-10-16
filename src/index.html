@@ -11,8 +11,8 @@
 	<meta name="format-detection" content='telephone=no' />
 
 	<!-- SEO META Краткое описание, ключевые слова -->
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="description" content="Здоровое питание для ваших питомцев" />
+	<meta name="keywords" content="здоровое питание, питомцыЮ собаки, корм, диета" />
 
 	<!--  Индексирование странички
 		<meta name="robots" content="" />
@@ -94,11 +94,14 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="resources/libs/swiper-bundle.min.css" />
+	<link href="resources/libs/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css" />
-	<title>Zooov</title>
+	<title>Zooov - Питание, которое полюбит Ваш хвостик!</title>
+
 </head>
 
 <body class="body">
+
 	@include('partials/_header.html')
 	<main class="main-content">
 		@include('partials/_hero-section.html')
@@ -111,9 +114,15 @@
 		@include('partials/_contact.html')
 	</main>
 	@include('partials/_footer.html')
-	<!-- @include('partials/_modals.html') -->
+	@include('partials/_modal-descr.html')
+	@include('partials/_modal-order.html')
+	@include('partials/_modal-calc.html')
+	@include('partials/_modal-response.html')
+	<div class="snackbar" role="alert" hidden> Текст </div>
+
 
 	<script src="resources/libs/swiper-bundle.min.js"></script>
+	<script src="resources/libs/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
