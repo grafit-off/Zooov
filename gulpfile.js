@@ -97,7 +97,7 @@ const htmlInclude = () => {
 }
 
 const imgToApp = () => {
-	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg', './src/img/**/*.svg', '!src/img/sprites/*.svg'])
+	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.webp', './src/img/**/*.avif', './src/img/**/*.jpeg', './src/img/**/*.svg', '!src/img/sprites/*.svg'])
 		.pipe(dest('./app/img'))
 }
 
@@ -136,6 +136,8 @@ const watchFiles = () => {
 	watch('./src/img/**/*.png', imgToApp);
 	watch('./src/img/**/*.jpeg', imgToApp);
 	watch('./src/img/**/*.svg', imgToApp);
+	watch('./src/img/**/*.webp', imgToApp);
+	watch('./src/img/**/*.avif', imgToApp);
 	watch('./src/img/sprites/**.svg', svgSprites);
 	watch('./src/resources/**', resources);
 	watch('./src/fonts/**.ttf', fonts);
@@ -231,7 +233,7 @@ const htmlIncludeBuild = () => {
 }
 
 const imgToAppBuild = () => {
-	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg', './src/img/**/*.svg', '!src/img/sprites/*.svg'])
+	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.webp', './src/img/**/*.avif', './src/img/**/*.jpeg', './src/img/**/*.svg', '!src/img/sprites/*.svg'])
 		.pipe(dest('./build/img'))
 }
 

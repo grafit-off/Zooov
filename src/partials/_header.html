@@ -1,7 +1,11 @@
 <header class="header fixed-padding" id="header">
 	<div class="header__container container">
 		<a class="header__logo link-reset">
-			<img src="img/logo.jpg" alt="Логотип с надписью Зув" class="header__image" width="80" height="80">
+			<picture>
+				<source srcset="img/logo.webp" type="image/webp">
+				<source srcset="img/logo.jpg" type="image/jpeg">
+				<img src="img/logo.jpg" alt="Логотип с надписью Зув" class="header__image" width="80" height="80">
+			</picture>
 		</a>
 		<button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false">
 			<span class="burger__line"></span>

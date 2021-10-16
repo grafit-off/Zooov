@@ -105,7 +105,11 @@
 	<header class="header fixed-padding" id="header">
 	<div class="header__container container">
 		<a class="header__logo link-reset">
-			<img src="img/logo.jpg" alt="Логотип с надписью Зув" class="header__image" width="80" height="80">
+			<picture>
+				<source srcset="img/logo.webp" type="image/webp">
+				<source srcset="img/logo.jpg" type="image/jpeg">
+				<img src="img/logo.jpg" alt="Логотип с надписью Зув" class="header__image" width="80" height="80">
+			</picture>
 		</a>
 		<button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false">
 			<span class="burger__line"></span>
@@ -186,7 +190,11 @@
 			</ul>
 		</div>
 		<div class="about__image" data-aos="fade-up" data-aos-delay="0">
-			<img loading="lazy" src="img/about-img.jpg" width="527" height="469" alt="Песик кушает мясо" class="about__img">
+			<picture>
+				<source srcset="img/about-img.webp" type="image/webp">
+				<source srcset="img/about-img.jpg" type="image/jpeg">
+				<img loading="lazy" src="img/about-img.jpg" width="527" height="469" alt="Песик кушает мясо" class="about__img">
+			</picture>
 		</div>
 		<div class="about__classification " data-aos="fade-up" data-aos-delay="0">
 			<div class="classification-swiper " data-mobile="false">
@@ -279,7 +287,11 @@
 				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="0">
 					<article class="product__wrapper">
 						<div class="product__info">
-							<img loading="lazy" src="img/diet-1.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							<picture>
+								<source srcset="img/diet-1.webp" type="image/webp">
+								<source srcset="img/diet-1.jpg" type="image/jpeg">
+								<img loading="lazy" src="img/diet-1.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							</picture>
 							<h3 class="product__heading main-text text-reset">
 								Для взрослых собак
 							</h3>
@@ -300,7 +312,11 @@
 				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
 					<article class="product__wrapper">
 						<div class="product__info">
-							<img loading="lazy" src="img/diet-2.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							<picture>
+								<source srcset="img/diet-2.webp" type="image/webp">
+								<source srcset="img/diet-2.jpg" type="image/jpeg">
+								<img loading="lazy" src="img/diet-2.jpg" width="251" height="298" alt="Упаковка еды для щенков" class="product__image">
+							</picture>
 							<h3 class="product__heading main-text text-reset">
 								Для щенков
 							</h3>
@@ -321,7 +337,11 @@
 				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
 					<article class="product__wrapper">
 						<div class="product__info">
-							<img loading="lazy" src="img/diet-3.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							<picture>
+								<source srcset="img/diet-3.webp" type="image/webp">
+								<source srcset="img/diet-3.jpg" type="image/jpeg">
+								<img loading="lazy" src="img/diet-3.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							</picture>
 							<h3 class="product__heading main-text text-reset">
 								Для взрослых собак
 							</h3>
@@ -342,7 +362,11 @@
 				<div class="diet-swiper__slide product" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="300">
 					<article class="product__wrapper">
 						<div class="product__info">
-							<img loading="lazy" src="img/diet-4.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							<picture>
+								<source srcset="img/diet-4.webp" type="image/webp">
+								<source srcset="img/diet-4.jpg" type="image/jpeg">
+								<img loading="lazy" src="img/diet-4.jpg" width="251" height="298" alt="Упаковка еды для взрослых собак" class="product__image">
+							</picture>
 							<h3 class="product__heading main-text text-reset">
 								Для щенков
 							</h3>
@@ -412,10 +436,26 @@
 		<section class="zooov" id="zooov">
 	<div class="zooov__container container">
 		<div class="zooov__images" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2000">
-			<img loading="lazy" src="img/zooov.png" width="323" height="433" alt="Собачки" class="zooov__image zooov__image--desk">
-			<img loading="lazy" src="img/zooov-mobile.png" alt="Собачки" class="zooov__image  zooov__image--mobile">
-			<img loading="lazy" src="img/zooov-3.png" width="90" height="90" alt="Питбуль" class="zooov__image zooov__image--dog">
-			<img loading="lazy" src="img/zooov-4.png" width="90" height="90" alt="Сердечко" class="zooov__image  zooov__image--heart">
+			<picture>
+				<source srcset="img/zooov.webp" type="image/webp">
+				<source srcset="img/zooov.png" type="image/png">
+				<img loading="lazy" src="img/zooov.png" width="323" height="433" alt="Собачки" class="zooov__image zooov__image--desk">
+			</picture>
+			<picture>
+				<source srcset="img/zooov-mobile.webp" type="image/webp">
+				<source srcset="img/zooov-mobile.png" type="image/png">
+				<img loading="lazy" src="img/zooov-mobile.png" alt="Собачки" class="zooov__image  zooov__image--mobile">
+			</picture>
+			<picture>
+				<source srcset="img/zooov-3.webp" type="image/webp">
+				<source srcset="img/zooov-3.png" type="image/png">
+				<img loading="lazy" src="img/zooov-3.png" width="90" height="90" alt="Питбуль" class="zooov__image zooov__image--dog">
+			</picture>
+			<picture>
+				<source srcset="img/zooov-4.webp" type="image/webp">
+				<source srcset="img/zooov-4.png" type="image/png">
+				<img loading="lazy" src="img/zooov-4.png" width="90" height="90" alt="Сердечко" class="zooov__image  zooov__image--heart">
+			</picture>
 		</div>
 
 		<div class="zooov__info">
@@ -671,22 +711,38 @@
 				<ul class="image-preview__list list-reset">
 					<li class="image-preview__item">
 						<button class="image-preview__button image-preview__button--active btn-reset" aria-label="Показть первое изображение">
-							<img loading="lazy" width="66" height="66" src="img/image-preview1.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							<picture>
+								<source srcset="img/image-preview1.webp" type="image/webp">
+								<source srcset="img/image-preview1.jpg" type="image/jpeg">
+								<img loading="lazy" width="66" height="66" src="img/image-preview1.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							</picture>
 						</button>
 					</li>
 					<li class="image-preview__item">
 						<button class="image-preview__button btn-reset" aria-label="Показть второе изображение">
-							<img loading="lazy" width="66" height="66" src="img/image-preview2.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							<picture>
+								<source srcset="img/image-preview3.webp" type="image/webp">
+								<source srcset="img/image-preview3.jpg" type="image/jpeg">
+								<img loading="lazy" width="66" height="66" src="img/image-preview2.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							</picture>
 						</button>
 					</li>
 					<li class="image-preview__item">
 						<button class="image-preview__button btn-reset" aria-label="Показть третье изображение">
-							<img loading="lazy" width="66" height="66" src="img/image-preview3.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							<picture>
+								<source srcset="img/image-preview3.webp" type="image/webp">
+								<source srcset="img/image-preview3.jpg" type="image/jpeg">
+								<img loading="lazy" width="66" height="66" src="img/image-preview3.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							</picture>
 						</button>
 					</li>
 					<li class="image-preview__item">
 						<button class="image-preview__button btn-reset" aria-label="Показть четвертое изображение">
-							<img loading="lazy" width="66" height="66" src="img/image-preview4.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							<picture>
+								<source srcset="img/image-preview4.webp" type="image/webp">
+								<source srcset="img/image-preview4.jpg" type="image/jpeg">
+								<img loading="lazy" width="66" height="66" src="img/image-preview4.jpg" alt="" class="image-preview__img" aria-hidden="true">
+							</picture>
 						</button>
 					</li>
 				</ul>
