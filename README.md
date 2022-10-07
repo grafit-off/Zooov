@@ -1,5 +1,5 @@
-# Zoow
-## [GitHub Pages](https://grafit-off.github.io/Zooov/) 
+# ZOOOV | Pet Health Food Store
+## [Open website](https://grafit-off.github.io/Zooov/) 
 
 ### 🎯Goal
 Create a responsive website with modal windows and nice animation
